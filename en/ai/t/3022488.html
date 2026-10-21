@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3350E vehicle direction control system vdc · Alfa 147</title>
+<meta name="description" content="system description. engines: 1.6 TS, 2.0 TS; all production periods. Descriptions &gt; 33 BRAKING SYSTEM &gt; 3350 DRIVE CONTROL&#x27; &gt; 3350E vehicle direction control system vdc">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Alfa 147 workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="3022400.html">Descriptions</a> › <a href="3022475.html">33 BRAKING SYSTEM</a> › <a href="3022486.html">3350 DRIVE CONTROL&#x27;</a> › <span>3350E vehicle direction control system vdc</span></nav>
+<h1><span class="code">3350E</span> vehicle direction control system vdc</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Descriptions &gt; 33 BRAKING SYSTEM &gt; 3350 DRIVE CONTROL&#x27; &gt; 3350E vehicle direction control system vdc</dd>
+<dt>Kind</dt><dd>system description</dd>
+<dt>Applies to</dt><dd>engines: 1.6 TS, 2.0 TS; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-a147/en/#/3022488">https://sloeber94.github.io/elrnDB-a147/en/#/3022488</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: engines: 1.6 TS, 2.0 TS; all production periods</p><h2>CONSTRUCTION FEATURES</h2><p>GENERAL VIEW</p><figure class="photo"><img class="zoomable" src="../../../media/2067737.jpg" alt="" loading="lazy"></figure><p>1 - ABS/VDC control unit
+	2 - Steering angle sensor
+	3 - Engine management control unit
+	4 - Yaw/lateral acceleration sensor
+	5 - Front right wheel sensor
+	6 - ASR off button
+	7 - Rear right wheel sensor
+	8 - Rear right wheel sensor
+	9 - VDC warning light
+	10 - EBD warning light
+	11 - ABS warning light
+	12 - Front left wheel sensor</p><h2>SPECIFCATIONS</h2><h3>Function</h3><p>Driving a car under all conditions that
+may lead to the physical limit of grip and thus of stability may
+be a difficult task for a normal driver even the car tends to be
+stable. To improve driving safety, it is therefore necessary to
+fit an electronic system able to help the driver in this difficult
+task.</p><p>Systems currently used to make driving safer
+under certain conditions are mainly ABS for braking control and
+TC and ASR/MSR systems.  These systems control traction during acceleration
+by acting on the brakes (T.C.) and traction/drive torque during
+acceleration and over-run by acting on the brakes and engine control
+system motorised throttle body (ASR/MSR).</p><p>The VDC system (Vehicle Dynamic Control) incorporates all the functions listed above and optimises vehicle control with the addition of specific sensors:</p><ul><li>steering angle sensor on the steering wheel</li><li>yaw/side acceleration sensor located near the centre
+of gravity beneath the central tunnel</li></ul><figure class="photo"><img class="zoomable" src="../../../media/2000305.jpg" alt="" loading="lazy"></figure><p>μ - wheel grip
+	S - slip
+	A - EBD intervention area
+	B - ABS intervention area
+	C - VDC intervention area
+	1 - Side force curve
+	2 - Longitudinal force curve</p><p>As may be seen from the grip/slip diagram,
+the VDC system covers a bigger area than a conventional ABS/EBD.</p><p>The VDC cannot be cut out because it is
+a safety system; the ASR/MSR function can, however, be cut out by
+means of a button on the central facia</p><p>VDC system intervention is indicated by
+a special warning light on the instrument panel node (Italian acronym
+= NQS)</p><h2>COMPOSITION</h2><h3>Structure</h3><p>The VDC system consists of:</p><ul><li>a special A.B.S.5.7 hydraulic/electronic control unit
+ (with V.D.C. function)</li><li>interface with the C-CAN line resident in the ABS control
+unit for communication with the engine management control unit,
+robotised gearbox and body computer</li><li>magnetoresistive wheel speed sensors</li><li>steering angle sensor with CAN interface (steering angle
+node)</li><li>yaw/side acceleration sensor integrated within a single
+component</li><li>brake fluid pressure sensor fitted to the ABS control
+unit</li><li>VDC warning light controlled via CAN line</li><li>ASR deactivation switch with warning light on button</li></ul><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>ASR deactivation is indicated
+at the NQS by means of a message on the DOT matrix.</p></aside><h2>OPERATION</h2><h2>Introduction</h2><p>The VDC system continuously detects loss
+of longitudinal and transverse wheel grip under all driving conditions,
+from braking to acceleration, to ensure vehicle directionality and
+stability.</p><p>The VDC system is managed by a Bosch 5.7
+ABS ECU integral with a special hydraulic control unit that makes
+it possible for the brake system to be operated independently of
+the driver.</p><p>The control unit processes the following signals:</p><ul><li>steering angle/steering wheel rotation speed</li><li>side acceleration and yaw</li><li>motorised throttle position</li><li>wheel rpm</li><li>hydraulic braking system pressure</li></ul><p>and uses special algorithms in the software to obtain the values for dynamic control of the vehicle:</p><ul><li>longitudinal and transverse slip between wheels and road
+surface</li><li>axle drift.</li></ul><p>The system calculate actual vehicle dynamics
+from these values; and identifies all critical conditions due to
+environmental factors (e.g. surface with poor grip) or any mistakes
+made by the driver (e.g. panic situations) to restore the car to
+efficient handling conditions by adjusting the brakes and drive
+torque.</p><p>The system interfaces with:</p><ul><li>NCM for drive torque modulation,</li><li>NCR (robotised gearbox node) for gear shift management</li><li>NBC (body  computer node) to transmit vehicle speed values
+and control warning lights.</li></ul><p>Information is exchanged between these components
+by means of the C-CAN and B-CAN lines.</p><p>System diagnosis is carried out via a dedicated
+line (K line).</p><p>The system is linked to a power unit with
+a special brake pump; the pipes between brake pump and ABS control
+unit are also fitted with a Titaflex insert because the pipe diameter
+is bigger (6 mm) than normal pipes (4 mm). this is to prevent negative
+effects on VDC operation at low brake fluid temperatures.</p><p>The VDC comes on automatically when the
+vehicle is started up and cannot be switched off by the driver.
+the button on the central console turns off only the ASR function
+and only in recommended circumstances (see ASR system)</p><figure class="photo"><img class="zoomable" src="../../../media/2042070.jpg" alt="" loading="lazy"></figure><p>INPUT SIGNALS</p><ul><li>Wheel speed sensor (from direct line) (3)</li><li>Brake pedal switch (4)</li><li>Brake pedal switch wiring diagram (5)</li><li>ASR button off (from direct line) (6)</li><li>Engine control unit (2)</li><li>Throttle angle position (from C-CAN line)</li><li>Body computer (14)</li><li>Handbrake lever position (from C-CAN line)</li><li>Warning light status indicator (from C-CAN line)</li><li>Yaw sensor (rotation around vehicle vertical axis (from
+direct line) (10)</li><li>Lateral acceleration sensor (from direct line) (10)</li><li>Steering wheel steering angle/rotation sensor ((from C-CAN
+line) (12)</li><li>Robotised gearbox control unit (speed engaged status)
+(from C-CAN line) (13)</li><li>Hydraulic system pressure sensor(from direct line) (1)</li></ul><p>OUTPUT SIGNALS</p><ul><li>Brake pressure modulation command (15)</li><li>Ignition advance reduction command (from C-CAN line) (9)</li><li>Engine power management command (from C-CAN line) (8)</li><li>Gear change inhibition (from C-CAN line) (13)</li><li>Wheel speed signal for speedometer and mileometer (from
+C-CAN line) (14).</li><li>VSO (vehicle speed) signal (14)</li><li>VDC warning light control on panel (from C-CAN line) (11)</li><li>ASR led off (7)</li></ul><p>As explained previously, the VDC controls
+longitudinal vehicle slip and also transverse slip, i.e. vehicle
+lateral stability.</p><p>Vehicle lateral stability is provided by
+tyre reaction to lateral forces and depends on the strength with
+which the wheel grips the road surface.</p><p>A wheel&#x27;s adhesive force depends on vertical
+load, which depends in turn on wheel situation (supporting or unladen)
+and friction coefficient,  which depends in turn on surface and
+tyre conditions.</p><p>When the vehicle is moving in a straight
+line, the effect of side forces may be disregarded, unless external
+factors increase their intensity (e.g. wind gusts or changeover
+to a different surface). Conversely, when the car corners, side
+forces increase greatly due to the increase in centrifugal force.</p><p>The action of side forces brings about a
+change in wheel drift angle and thus a change in axle drift (drift
+angle = difference between required trajectory and actual trajectory).</p><p>The side forces do not act equally on all four wheels because the wheels are not subject to the same load conditions. Wheels are loaded differently in different situations. The following situations may occur:</p><ul><li>acceleration (lightening of front axle and loading of
+rear axle)</li><li>braking (loading of front axle and lightening of rear
+axle)</li><li>right/left bend (loading of outside wheels and lightening
+of inside wheels)</li><li>cornering while accelerating/decelerating (combination
+of the above cases)</li></ul><p>If the side forces acting on individual
+wheels vary, it follows that the resultant forces acting on the
+car axles also vary. This means that if side forces acting on the
+front axle prevail over the forces acting on the rear axle or viceversa,
+the vehicle&#x27;s vertical axis (yaw axis) is subject to a rotatory
+force (moment)</p><p>The yawing moment affects car behaviour
+and generates a state of understeer or oversteer.</p><p>A vehicle is said to be understeered when
+the front axle drift angle increase to a greater extent than that
+of the rear axle when subject to increasing side acceleration. In
+this case, the car tends to go straight when turning a corner (it
+tends to take the curve wide).</p><figure class="photo"><img class="zoomable" src="../../../media/2042071.jpg" alt="" loading="lazy"></figure><p>A car is said to be oversteered when the
+rear axle drift angle increases to a greater extent than that of
+the front axis with increasing transverse acceleration. In this
+case, the vehicle tends to spin around (the rear axle tends to go
+straight and the vehicle cuts the corner.</p><figure class="photo"><img class="zoomable" src="../../../media/2042072.jpg" alt="" loading="lazy"></figure><p>To keep the influence of side forces under control and thus limit the yawing moment, the ABS 5.7 control unit must firstly compute the vehicle behaviour set by the driver on the basis of:</p><ul><li>steering angle sensor/steering wheel rotation speed</li><li>accelerator pedal position</li><li>braking system pressure</li></ul><p>after which the control unit assesses actual vehicle behaviour by means of:</p><ul><li>the sensors on the wheels (car speed/wheel speed)</li><li>side acceleration sensor</li><li>yaw sensor.</li></ul><p>The above shows that the control unit is able to:</p><ul><li>perceive the driver&#x27;s actions because steering wheel position
+shows the number of degrees by which (large radius or short radius
+bend) and the speed with which the steering wheel is turned (sudden
+or gradual turns). Throttle position and brake pressure also show
+whether the car is accelerating or braking. In other words, how
+the driver takes the corner or deviates from a straight trajectory.</li><li>perceive actual vehicle behaviour on the basis of environmental
+variables e.g. slippery surface, car reactions to incorrect manoeuvres
+by the driver etc. in order to identify yawing moment and axle side
+slip by means of sensors on all four wheels and the yaw and side
+acceleration sensor.</li></ul><p>These two operations are necessary to compare
+the mathematical model mapped in the control unit with actual car
+behaviour in order to identify vehicle status (understeer or oversteer)
+and decide the action to be taken on the brakes and engine</p><h3>Understeering on corners</h3><p>The control unit monitors to detect understeer
+(prevalence of front axle drift) and corrects car behaviour by braking
+the wheels on the inside of the bend to create an opposite moment
+in order to bring the car toward the middle of the bend and reducing
+drive torque if necessary.</p><figure class="photo"><img class="zoomable" src="../../../media/2042073.jpg" alt="" loading="lazy"></figure><h4>Oversteering on corners</h4><p>The car detects the presence of oversteer
+(prevalence of rear axle drift) and corrects vehicle behaviour by
+braking the front wheel on the outside of the bend to create an
+opposite yawing moment, possibly augmented by an increase in the
+driving torque.</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>The system intervenes before understeer
+and oversteer reach excessive levels in order to limit countersteering manoeuvres
+that could be difficult to handle.</p></aside><figure class="photo"><img class="zoomable" src="../../../media/2042074.jpg" alt="" loading="lazy"></figure><h3>Abrupt changes in straight trajectory (swerving/overtaking)</h3><p>In the case of abrupt changes in trajectory
+(e.g. overtaking/swerving, the control unit identifies possible
+oversteer or understeer conditions and correct vehicle trajectory
+as described above.</p><h3>Abrupt change in straight trajectory (driving over
+different surfaces)</h3><p>The control unit can preceive deviations
+from the trajectory and prevalence of axle drift, and corrects the
+trajectory with appropriate actions on the brakes and engine.</p><h3>Brusque acceleration/deceleration</h3><p>The control unit implements the ASR/MSR
+strategy it controls vehicle side acceleration and thus regulates
+the action on the front and rear brakes and driving torque more
+fully than on cars with ASR only.</p><h3>Cutting out asr</h3><p>If the ASR/MSR is cut out the following functions remain active:</p><ul><li>A.B.S./E.B.D.</li><li>TC up to a speed of 40 km /h</li><li>partial V.D.C.</li></ul><h3>Displaying vdc intervention</h3><p>When the VDC system intervenes, a warning
+light on the control panel flashes (5 Hz c.c. 50%).</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>The VDC increases driving safety
+but cannot control extreme situations. The system should not be
+seen as a performance-enhancing device but as a device that increases
+vehicle safety.</p></aside><h2>Diagnostic functions</h2><p>The ABS 5.7 control unit is able to carry out automatic diagnosis on the system and if a fault is found is able to:</p><ul><li>deactivate the entire system</li><li>deactive the system partially (maintaining the ABS/EBD
+function)</li></ul><p>A list of anomalies detectable by the control
+unit, warning light statuses and recovery strategies is given below.</p><div class="table"><table><tr><th><p>Error</p></th><th><p>ABS warning light</p></th><th><p>EBD warning light</p></th><th><p>VDC warning light</p></th><th colspan="1"><p>Recovery</p></th></tr><tr><td><p>electrical fault in rh front sensor</p></td><td><p>ON</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R3</p></td></tr><tr><td><p>electrical fault in lh front sensor</p></td><td><p>ON</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R3</p></td></tr><tr><td><p>electrical error in rh rear sensor</p></td><td><p>ON</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R3</p></td></tr><tr><td><p>electrical error in lh rear sensor</p></td><td><p>ON</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R3</p></td></tr><tr><td><p>error in rh front sensor</p></td><td><p>ON</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R3</p></td></tr><tr><td><p>error in lh front sensor</p></td><td><p>ON</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R3</p></td></tr><tr><td><p>error in rh rear sensor</p></td><td><p>ON</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R3</p></td></tr><tr><td><p>error in lh rear sensor</p></td><td><p>ON</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R3</p></td></tr><tr><td><p>rh front ABS discharge solenoid</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R2</p></td></tr><tr><td><p>rh front ABS charge solenoid</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R2</p></td></tr><tr><td><p>lh front ABS discharge solenoid</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R2</p></td></tr><tr><td><p>lh front ABS charge solenoid</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R2</p></td></tr><tr><td><p>lh rear ABS discharge solenoid</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R2</p></td></tr><tr><td><p>lh rear ABS charge solenoid</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R2</p></td></tr><tr><td><p>rh rear ABS discharge solenoid</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R2</p></td></tr><tr><td><p>rh rear ABS charge solenoid</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R2</p></td></tr><tr><td><p>Main valve 1 (VLV1)</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R2</p></td></tr><tr><td><p>Main valve 2 (VLV2)</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R2</p></td></tr><tr><td><p>Pilot valve 1 (USV1)</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R2</p></td></tr><tr><td><p>Pilot valve 2 (USV2)</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R2</p></td></tr><tr><td><p>Pump motor</p></td><td><p>ON</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R3</p></td></tr><tr><td><p>Valve relay</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R2/R5</p></td></tr><tr><td><p>NO - NC brake light switch</p></td><td><p>ON</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R3</p></td></tr><tr><td><p>Side acceleration sensor (AY)</p></td><td><p>OFF</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R4</p></td></tr><tr><td><p>Yawing sensor</p></td><td><p>OFF</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R4</p></td></tr><tr><td><p>Brake fluid pressure sensor</p></td><td><p>ON</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R3</p></td></tr><tr><td><p>Lambda 6 (magnetic wheel malfunction)</p></td><td></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R1</p></td></tr><tr><td><p>NOTB (implementation anomaly)</p></td><td><p>ON</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R5/R3</p></td></tr><tr><td><p>Steering angle sensor</p></td><td><p>OFF</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R4</p></td></tr><tr><td><p>CAN-BUS network</p></td><td><p>OFF</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R4</p></td></tr><tr><td><p>Engine CAN message errors</p></td><td><p>OFF</p></td><td><p>OFF</p></td><td><p>ON</p></td><td colspan="1"><p>R4</p></td></tr><tr><td><p>Junction</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R1</p></td></tr><tr><td><p>Supply voltage</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R2</p></td></tr><tr><td><p>Variant Coding  (incorrect vehicle configuration
+received from CAN network)</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>R1</p></td></tr><tr><td><p>Communication with fault warning lights</p></td><td><p>ON</p></td><td><p>ON</p></td><td><p>ON</p></td><td colspan="1"><p>ON</p></td></tr></table></div><p>R1 - System deactivation</p><p>R2 - VDC/ASR,ABS,EBD deactivation</p><p>R3 - VDC/ASR,ABS deactivation</p><p>R4 - VDC/ASR deactivation</p><p>R5 - Inhibition of VDC/ASR and ABS during
+malfunction</p><p>R6 – Store fault without disabling system</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>Although the system is connected
+to the C-CAN line, it comes with its own diagnostic line known as
+the K line. The system may be diagnosed by connecting a Tester to
+the tester connection on the N.B.C. (body computer node).</p></aside><h2>Warning light operation</h2><p>The ABS control unit activates warning lights as follows:</p><ul><li>with VDC on, the panel warning light is off and the ASR
+VDC button warning light is off</li><li>with ASR off, the VDC warning light on the panel is off
+but a message appears on the Dot matrix to indicate ASR off and
+the button warning light comes on</li><li>with VDC activated, the panel warning light flashes and
+the button warning light is off</li><li>with VDC faulty, the panel warning light is on and a message
+appears on the Dot matrix</li></ul><h2>Component description</h2><h3>Hydraulic system operation</h3><p>The hydraulic unit on the version with V.D.C.
+comes with 4 additional solenoid valves.</p><p>When activated, the inlet solenoid valve
+(normally closed) can receive the additional quantity of fluid required
+to increase the pressure and brake the wheel/s.</p><p>The operating solenoid valve (normally open),
+when activated, allows the modulated pressure produced by the pump
+to be maintained in the circuit.</p><p>When the VDC does not intervene, the ECU:</p><ul><li>does not activate the inlet solenoid (N.C.) (2).</li><li>does not activate the operating solenoid (N.0.) (3).</li></ul><p>In this way the system operates like the
+Bosch 5.7 ABS <a href="3022484.html">3340A abs check/adjustment devices</a>.</p><figure class="photo"><img class="zoomable" src="../../../media/2042075.jpg" alt="" loading="lazy"></figure><p>During V.D.C. intervention, the ECU:</p><ul><li>activates the hydraulic aggregate pump (1)</li><li>activates the inlet solenoid (N.C.) (2)</li><li>activates the operating solenoid (N.O.) (3).</li></ul><p>Therefore the pressure generated by pump
+(1) then reaches the brake calipers and is modulated, upon a command
+by the electronic control unit, by the de-pressurzing (5) and pressurizing
+(6) solenoid valves.</p><figure class="photo"><img class="zoomable" src="../../../media/2042076.jpg" alt="" loading="lazy"></figure><h2>COMPONENT DESCRIPTION</h2><h2>Electrohydraulic unit</h2><h3>Composition</h3><h4>Structure</h4><p>The hydraulic control unit consists of an
+electronic control unit and a hydraulic control unit.</p><figure class="photo"><img class="zoomable" src="../../../media/2042077.jpg" alt="" loading="lazy"></figure><p>1 - Electronic control unit
+	2 - Hydraulic control unit
+	3 - Brake fluid pressure sensor
+	4 - Accelerator pump unit
+	5 - 42 pin connector</p><h2>Electronic control</h2><h3>Specifications</h3><h4>Function</h4><p>The electronic control unit is responsible for:</p><ul><li>downloading data from the wheel rpm sensors</li><li>storing control parameters defined during the preparation
+of the vehicle</li><li>storing the control software</li><li>processes downloaded data</li><li>controls the braking process</li><li>detecting failures at the braking system components</li><li>storing fault codes and activating ABS/EBD/ASR/VDC warning
+lights</li><li>transmitting and receiving data via the diagnostic connector</li><li>communicating with the engine control unit</li><li>monitoring the ASR/MSR/VDC process</li><li>sending and receiving data via the C-CAN line</li><li>communicating with the robotised gearbox (NCR).</li></ul><h3>Pin out</h3><p>The control unit is connected to the electrical
+system via a 42 pin connector.</p><figure class="photo"><img class="zoomable" src="../../../media/2042078.jpg" alt="" loading="lazy"></figure><p>1 - Power earth
+	2 - + 30 power supply
+	3 - N.C.
+	4 - N.C.
+	5 - Signal earth
+	6 - +30 power source
+	7 - N.C.
+	8 - Acceleration/yaw sensor
+	9 - Side acceleration sensor test
+	10 - Acceleration/yaw sensor reference
+	11 - Diagnostic line K
+	12 - Front left sensor  signal
+	13 - Rear left sensor positive
+	14 - Rear left sensor signal
+	15 - Front right sensor positive
+	16 - Front right sensor signal
+	17 - N.C.
+	18 - Button ASR warning light
+	19 - N.C.
+	20 - N.C. stop switch
+	21 - Acceleration/yaw sensor earth
+	22 - N.C.
+	23 - +15 power source
+	24 - CAN H line
+	25 - Brake fluid pressure sensor earth
+	26 - Brake fluid sensor signal
+	27 - Passive ASR switch
+	28 - Front left sensor positive
+	29 - N.C.
+	30 - Rear right sensor positive
+	31 - Rear right sensor signal
+	32 - N.O. stop switch
+	33 - N.C.
+	34 - N.C.
+	35 - N.C.
+	36 - N.C.
+	37 - Vehicle speed VSO (recovery)
+	38 - N.C.
+	39 - Side yaw/acceleration sensor power supply
+	40 - CAN L Line
+	41 - Yaw sensor signal
+	42 - Brake fluid pressure sensor positive</p><h4>Principle diagram</h4><p>PRINCIPLE WIRING DIAGRAM</p><figure class="photo"><img class="zoomable" src="../../../media/2042079.jpg" alt="" loading="lazy"></figure><p>A - Solenoid relay
+	B - Pump motor
+	C - Pump motor
+	D - Valve unit
+	E - Electronic control unit
+	F - Brake fluid pressure monitoring sensor
+	G - Steering angle sensor
+	H - Lateral yaw/acceleration sensor
+	I - NO/NC brake pedal sensor
+	FL - Front left sensor
+	FR - Front right sensor
+	RL - Rear left sensor
+	RR - Rear right sensor
+	1A-1B - Left front wheel solenoid
+	34-3B - Left front wheel solenoid
+	4A-4B - Left rear wheel solenoid
+	2A-2B - Right rear wheel solenoid
+	5 - Pilot solenoid
+	6 - Intake solenoid
+	7 - Pilot solenoid 1
+	8 - Intake solenoid 1</p><h2>Hydraulic control unit</h2><h3>Specifications</h3><h4>Function</h4><p>Responsible for modulating the pressure of the fluid at the brake calipers via two solenoid valves with the following stages:</p><ul><li>brake fluid pressure increase</li><li>brake fluid pressure maintenance</li><li>brake fluid pressure discharge.</li></ul><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>New hydraulic units are supplied
+already filled with fluid. Take care not to take off the protective
+cap and turn upside down while handling.</p></aside><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>A sensor is fitted to the hydraulic
+control unit to monitor brake pressure. This sensor is supplied
+together with the hydraulic unit cannot therefore be replaced individually.</p></aside><h3>Composition</h3><h4>Structure</h4><p>The electro-hydraulic control unit consists of:</p><ul><li>twelve two-way solenoid valves</li><li>a dual circuit electric recovery pump</li><li>two low pressure accumulators</li><li>two high pressure accumulators</li><li>brake fluid pressure sensor.</li></ul><p>The letters indicating to which caliper and to which brake pump outlet they should be connected at stamped on the control unit at each outlet.</p><ul><li>RR = to the right rear brake (pipe marked with a light
+blue coloured band)</li><li>LR = to the left rear brake (pipe marked with a green
+coloured band)</li><li>RF = to the right front caliper (pipe marked with a yellow
+coloured band)</li><li>LF = to the left front caliper (pipe marked with a white
+coloured band)</li><li>MC1 = from the main circuit/flange side pump (pipe marked
+with a black or pink coloured band when the pipe polyammide resin
+is black)</li><li>MC2 = from the secondary circuit/front pump (pipe marked
+with a brown coloured band).</li></ul><figure class="photo"><img class="zoomable" src="../../../media/2042080.jpg" alt="" loading="lazy"></figure><h2>Steering sensor</h2><h3>Characteristics</h3><h4>Operation</h4><p>The steering angle sensor detects steering
+wheel angle and turning speed and makes the data available to the
+C-CAN network (steered angle sensor node).</p><figure class="photo"><img class="zoomable" src="../../../media/2042081.jpg" alt="" loading="lazy"></figure><p>1 - Pins to adapt to rh and lh drive vehicles
+	2 - Sensor case
+	3 - Connector</p><h3>Composition</h3><h4>Location</h4><p>The sensor is fitted to the steering column
+and comes with a pin that is connected to a grooved bracket that
+allows the steering column to move axially.</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>The two pins on the sensor are
+used for positioning on rh and lh drive vehicles</p></aside><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>If removal and refitting operations
+are carried out on the steering wheel, steering column and power
+steering/alignment adjustment, the sensor must be electronically
+calibrated using a Tester.</p></aside><figure class="photo"><img class="zoomable" src="../../../media/2042082.jpg" alt="" loading="lazy"></figure><h4>Pin out</h4><p>The sensor comes with a four pin connector,
+two pins are used to supply the sensor and two for the C-CAN line.</p><p>Pin 1, Earth</p><p>Pin 2, +15 positive</p><p>Pin 3, C-CAN H Line</p><p>Pin 4, C-CAN H Line</p><h3>Operation</h3><p>The sensor measures the following using its internal electronic system:</p><ul><li>steering column angular position</li><li>steering column rotation speed.</li></ul><p>This information is processed directly by
+the sensor and made available to the brake node via the C-CAN network.</p><p>The steering column (6) operates two measuring
+sprockets (1) via a toothed crown wheel (7). These measuring sprockets incorporate
+magnets (2). The AMR elements (3), whose resistance varies in accordance
+with the direction of the magnetic field, record the angle position
+of the magnets. The analogue values measured are sent to a microprocessor
+via an A/D converter. The measuring sprockets have a different number
+of teeth and so change their rotational position in accordance with
+the steering wheel&#x27;s position.</p><p>The total steering angle may be calculated
+from the combination of the two actual angles.</p><figure class="photo"><img class="zoomable" src="../../../media/2042083.jpg" alt="" loading="lazy"></figure><p>1 - Measuring sprockets
+	2 - Magnets
+	3 - AMR elements
+	4 - Microprocessor
+	5 - Sensor casing
+	6 - Steering column
+	7 - Toothed crown wheel</p><p>After a few steering wheel rotations, both
+measuring sprockets return to their original position.</p><p>These two measuring sprockets and their
+measuring principle allow a larger measuring range of steering wheel
+turns to be exploited, without having to use a rev counter.  There
+is a mathematical ratio between the steering wheel angle and the
+angles of the two measuring sprockets. A mathematical function can
+be used to determine the absolute steering angle from the positions
+of the measuring sprockets. This function can also be used to correct
+faults and check the plausibility of the individual signals.</p><figure class="photo"><img class="zoomable" src="../../../media/2042084.jpg" alt="" loading="lazy"></figure><p>1 - Measuring sprockets
+	2 - Magnets
+	3 - AMR elements
+	4 - A/D converter
+	5 - Microprocessor
+	6 - CAN interface
+	7 - C-CAN networks bus</p><p>The sensor has an angular measurement range
+of 1560° and an angular resolution of 0.1 °.</p><p>For the sensor to operate, it must be reset
+to zero in relation to the steering wheel position. This is done
+using a Tester (see instructions provided with the EXAMINER device).</p><p>The sensor comes with an automatic diagnosis
+function and is able to check the plausibility of information processed.</p><h2>Yaw/lateral acceleration sensor</h2><h3>Characteristics</h3><h4>Operation</h4><p>The yaw/lateral acceleration sensor detects
+rotations about the vehicle vertical axis (yaw) and measures side
+accelerations.</p><p>It is connected directly to the ABS control
+unit.</p><figure class="photo"><img class="zoomable" src="../../../media/2042085.jpg" alt="" loading="lazy"></figure><p>Sensor operational specifications are as
+follows:</p><p>Supply voltage:</p><ul><li>Minimum value 8.2 V</li><li>Maximum value 16V</li><li>Rated value 12V</li></ul><p>Operating temperature:</p><ul><li>Minimum value -40° C</li><li>Maximum value +85° C</li></ul><p>Current uptake at 12 V:</p><ul><li>Rated value 70mA</li></ul><p>Yaw sensor:</p><ul><li>Measurement range  +/-100 °/s</li><li>Resolution +/-0.3 °/s</li></ul><p>Side acceleration sensor:</p><ul><li>Measurement range +/-1.8 g</li></ul><h3>Composition</h3><p>The sensor consists of a plastic case that
+encloses the sensitive parts that detect lateral yaw and acceleration
+and also an electronic control system.</p><p>The sensor has a six-pin connector, with
+all pins connected.</p><p>Pin1, Yaw sensor reference signal</p><p>Pin2, ABS control unit yaw sensor test signal</p><p>Pin3 - 12V sensor supply</p><p>Pin4 - Yaw signal in °/Sec</p><p>Pin5 - Side acceleration signal in G</p><p>Pin6 - Earth</p><h4>Location</h4><p>The sensor is located at the centre of gravity
+beneath the central console near the Air Bag control unit.</p><figure class="photo"><img class="zoomable" src="../../../media/2042086.jpg" alt="" loading="lazy"></figure><h3>Operation</h3><p>The sensor is supplied directly by the ABS
+control unit and supplies a yaw and acceleration signal simultaneously
+via its sensitive elements.</p><p>The yaw signal is processed directly by
+the sensor and sent to the ABS control unit with a superimposed
+reference signal.</p><p>Yaw signal range is between:</p><ul><li>lower limit 0.65V</li><li>upper limit 4.35V</li><li>reference signal 2.5V</li></ul><figure class="photo"><img class="zoomable" src="../../../media/2042087.jpg" alt="" loading="lazy"></figure><p>1 - Upper limit
+	2 - Reference signal
+	3 - Lower limit</p><p>The ABS control unit supplies an alternating
+signal to the sensor for testing and safety functions.</p><h2>Active sensors</h2><h3>Characteristics</h3><p>For active sensors see ABS system 
+<a href="3022483.html">3340 A(B.S. ANTI-LOCK BRAKING SYSTEM .)</a>.</p><h2>ASR activation button</h2><h3>Specifications</h3><h4>Function</h4><p>For ASR deactivation button see [
+<a href="3022487.html">3350A anti - spin regulation devices</a>).</p></section>
+<h2>Topics linked from this page (3)</h2><ul><li><a href="3022483.html">3340 A(B.S. ANTI-LOCK BRAKING SYSTEM .)</a> <span class="meta">chapter (index of subtopics) · engines: 1.6 TS, 2.0 TS; all production periods</span></li><li><a href="3022484.html">3340A abs check/adjustment devices</a> <span class="meta">system description · engines: 1.6 TS, 2.0 TS; all production periods</span></li><li><a href="3022487.html">3350A anti - spin regulation devices</a> <span class="meta">system description · engines: 1.6 TS, 2.0 TS; all production periods</span></li></ul>
+<h2>Topics that link to this page (1)</h2><ul><li><a href="3022493.html">4110A steering control</a> <span class="meta">system description · engines: 1.6 TS, 2.0 TS; all production periods</span></li></ul>
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-a147/en/">https://sloeber94.github.io/elrnDB-a147/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

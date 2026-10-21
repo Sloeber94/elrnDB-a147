@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>7005M front electric windows · Alfa 147</title>
+<meta name="description" content="system description. all engines; all production periods. Descriptions &gt; 70 FITTINGS &gt; 7005 PASSENGER COMPARTMENT FRONT SIDE DOORS &gt; 7005M front electric windows">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Alfa 147 workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="3022400.html">Descriptions</a> › <a href="3022538.html">70 FITTINGS</a> › <a href="3022539.html">7005 PASSENGER COMPARTMENT FRONT SIDE DOORS</a> › <span>7005M front electric windows</span></nav>
+<h1><span class="code">7005M</span> front electric windows</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Descriptions &gt; 70 FITTINGS &gt; 7005 PASSENGER COMPARTMENT FRONT SIDE DOORS &gt; 7005M front electric windows</dd>
+<dt>Kind</dt><dd>system description</dd>
+<dt>Applies to</dt><dd>all engines; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-a147/en/#/3022540">https://sloeber94.github.io/elrnDB-a147/en/#/3022540</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>COMPOSITION</h2><h2>COMPOSITION</h2><p>The driver&#x27;s door node (NPG)
+houses the following controls:</p><figure class="photo"><img class="zoomable" src="../../../media/2000610.jpg" alt="" loading="lazy"></figure><p>1 - Door mirror positioning knob
+	2 - L driver&#x27;s side R passenger side electric mirror selector
+	3 - L window control button
+	4 - R window control button
+	5 - REAR window selection button
+	6 - Rear window LOCK button
+	7 - Panel</p><h2>OPERATION</h2><p>The Driver&#x27;s Door Node performs the following functions:</p><ul><li>supports the functions described in the table;</li><li>receives and sends information on the B-CAN line (e.g.
+diagnosis, warning lights, commands, data);</li><li>interconnects with the driver&#x27;s front door wiring</li></ul><div class="table"><table><tr><th><p>No.</p></th><th><p>Function</p></th><th colspan="1"><p>Mode</p></th></tr><tr><td><p>F3</p></td><td><p>power supply from key 2 discharge relay</p></td><td colspan="1"><p>D</p></td></tr><tr><td><p>F40</p></td><td><p>download +15 signal</p></td><td colspan="1"><p>C</p></td></tr><tr><td><p>F89</p></td><td><p>front puddle light shared power supply and
+timer L/R</p></td><td colspan="1"><p>C, D</p></td></tr><tr><td><p>F91</p></td><td><p>download front door open signal</p></td><td colspan="1"><p>C</p></td></tr><tr><td><p>F99</p></td><td><p>download boot opening control signal from
+remote control or facia switch and relay positive control for boot opening
+electromagnet (predisposition)</p></td><td colspan="1"><p>C, D</p></td></tr><tr><td><p>F104</p></td><td><p>power supply for front window motors with
+manual and automatic up/down and signal download from anticrush seals;
+transmit button status for roger-beep and to maintain key 2 discharge
+relay power supply</p></td><td colspan="1"><p>C, D</p></td></tr><tr><td><p>F105</p></td><td><p>control rear windows from driver&#x27;s seat,
+transmit button status for roger-beep and to maintain key 2 discharge
+relay power supply</p></td><td colspan="1"><p>C</p></td></tr><tr><td><p>F107</p></td><td><p>inhibition of rear window control from driver&#x27;s
+side from buttons on rear doors transmit button status for roger-beep</p></td><td colspan="1"><p>C</p></td></tr><tr><td><p>F109</p></td><td><p>download front window closure signal from
+recirculation control and iimplement raise</p></td><td colspan="1"><p>C, D</p></td></tr><tr><td><p>F110</p></td><td><p>download front window closure signal from
+pollution sensor and implement raise</p></td><td colspan="1"><p>C, D</p></td></tr><tr><td><p>F111</p></td><td><p>download front window closure signal from
+remote control and implement raise</p></td><td colspan="1"><p>C, D</p></td></tr><tr><td><p>F112</p></td><td><p>download front window closure signal from
+rain sensor</p></td><td colspan="1"><p>C, D</p></td></tr><tr><td><p>F119</p></td><td><p>manage door mirror deflector adjustment</p></td><td colspan="1"><p>D</p></td></tr><tr><td><p>F122</p></td><td><p>transmit outdoor temperature signal to activate
+automatic rear window demist, door mirrors and windscreen/rear window
+nozzles</p></td><td colspan="1"><p>C</p></td></tr><tr><td><p>F181</p></td><td><p>transmit outdoor temperature signal for
+climate control function</p></td><td colspan="1"><p>C</p></td></tr><tr><td><p>F187</p></td><td><p>transmit outdoor temperature signal signal
+for supplementary heater function</p></td><td colspan="1"><p>C</p></td></tr><tr><td><p>F192</p></td><td><p>download signal from outdoor temperature
+sensor and send value for display</p></td><td colspan="1"><p>C</p></td></tr><tr><td><p>F218</p></td><td><p>self-diagnosis on B-CAN line</p></td><td colspan="1"><p>C</p></td></tr></table></div><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>Procedure for communication of
+subfunctions carried out by nodes is: C= via CAN; D = direct communication.</p></aside><p>Rear view of connectors.</p><figure class="photo"><img class="zoomable" src="../../../media/2000611.jpg" alt="" loading="lazy"></figure><p>A - H44A 16 way
+	B - H44B 26 way</p><h3>Pin-out</h3><p>CONNECTOR A</p><div class="table"><table><tr><th><p>Conn.</p></th><th><p>Pin</p></th><th colspan="1"><p>Operation</p></th></tr><tr><td><p>H44A</p></td><td><p>1</p></td><td colspan="1"><p>Control passenger side window from button</p></td></tr><tr><td><p>H44A</p></td><td><p>2</p></td><td colspan="1"><p>Driver&#x27;s side anticrush seal (S)</p></td></tr><tr><td><p>H44A</p></td><td><p>3</p></td><td colspan="1"><p>Driver&#x27;s side anticrush seal (-)</p></td></tr><tr><td><p>H44A</p></td><td><p>4</p></td><td colspan="1"><p>Outdoor temperature sensor (S)</p></td></tr><tr><td><p>H44A</p></td><td><p>5</p></td><td colspan="1"><p>Outdoor temperature sensor (-)</p></td></tr><tr><td><p>H44A</p></td><td><p>6</p></td><td colspan="1"><p>Tail-gate release electromagnet relay positive
+control</p></td></tr><tr><td><p>H44A</p></td><td><p>7</p></td><td colspan="1"><p>Free earth (connection with SB26)</p></td></tr><tr><td><p>H44A</p></td><td><p>8</p></td><td colspan="1"><p>Passenger side anticrush seal (S)</p></td></tr><tr><td><p>H44A</p></td><td><p>9</p></td><td colspan="1"><p>Passenger side anticrush seal (-)</p></td></tr><tr><td><p>H44A</p></td><td><p>10</p></td><td colspan="1"><p>B-CAN B</p></td></tr><tr><td><p>H44A</p></td><td><p>11</p></td><td colspan="1"><p>B-CAN A</p></td></tr><tr><td><p>H44A</p></td><td><p>12</p></td><td colspan="1"><p>driver&#x27;s door lock motor reduction unit
+control</p></td></tr><tr><td><p>H44A</p></td><td><p>13</p></td><td colspan="1"><p>driver&#x27;s door release motor reduction unit
+control</p></td></tr><tr><td><p>H44A</p></td><td><p>14</p></td><td colspan="1"><p>earth for motor bar shunt (connection with
+SB25)</p></td></tr><tr><td><p>H44A</p></td><td><p>15</p></td><td colspan="1"><p>NA (lock) motor bar signal Driver&#x27;s door</p></td></tr><tr><td><p>H44A</p></td><td><p>16</p></td><td colspan="1"><p>NC (release) motor bar signal Driver&#x27;s door</p></td></tr></table></div><p>CONNECTOR B</p><div class="table"><table><tr><th><p>Conn.</p></th><th><p>Pin</p></th><th colspan="1"><p>Function</p></th></tr><tr><td><p>H44B</p></td><td><p>1</p></td><td colspan="1"><p>Lift guide window motor</p></td></tr><tr><td><p>H44B</p></td><td><p>2</p></td><td colspan="1"><p>Lower guide window motor</p></td></tr><tr><td><p>H44B</p></td><td><p>3</p></td><td colspan="1"><p>boot release control negative signal from
+button on PCC</p></td></tr><tr><td><p>H44B</p></td><td><p>4</p></td><td colspan="1"><p>n.c.</p></td></tr><tr><td><p>H44B</p></td><td><p>5</p></td><td colspan="1"><p>n.c.</p></td></tr><tr><td><p>H44B</p></td><td><p>6</p></td><td colspan="1"><p>Passenger side electric mirror</p></td></tr><tr><td><p>H44B</p></td><td><p>7</p></td><td colspan="1"><p>Passenger side L/R mirror actuation</p></td></tr><tr><td><p>H44B</p></td><td><p>8</p></td><td colspan="1"><p>Passenger side high/low mirror actuation</p></td></tr><tr><td><p>H44B</p></td><td><p>9</p></td><td colspan="1"><p>Shared - driver&#x27;s electric mirror</p></td></tr><tr><td><p>H44B</p></td><td><p>10</p></td><td colspan="1"><p>Driver&#x27;s side L/R mirror actuation</p></td></tr><tr><td><p>H44B</p></td><td><p>11.</p></td><td colspan="1"><p>n.c.</p></td></tr><tr><td><p>H44B</p></td><td><p>12.</p></td><td colspan="1"><p>Passenger window motor lift</p></td></tr><tr><td><p>H44B</p></td><td><p>13</p></td><td colspan="1"><p>Passenger window motor lower</p></td></tr><tr><td><p>H44B</p></td><td><p>14</p></td><td colspan="1"><p>Power supply for services on driver&#x27;s door
+from F-47</p></td></tr><tr><td><p>H44B</p></td><td><p>15</p></td><td colspan="1"><p>Driver&#x27;s side power earth</p></td></tr><tr><td><p>H44B</p></td><td><p>16</p></td><td colspan="1"><p>n.c.</p></td></tr><tr><td><p>H44B</p></td><td><p>17</p></td><td colspan="1"><p>n.c.</p></td></tr><tr><td><p>H44B</p></td><td><p>18</p></td><td colspan="1"><p>Earth for driver&#x27;s side puddle light (connection
+with SB15)</p></td></tr><tr><td><p>H44B</p></td><td><p>19</p></td><td colspan="1"><p>Driver&#x27;s side puddle light timed power source
+positive (connection with SB20)</p></td></tr><tr><td><p>H44B</p></td><td><p>20</p></td><td colspan="1"><p>Passenger side puddle lightt timed power
+source positive (connection with SB19)</p></td></tr><tr><td><p>H44B</p></td><td><p>21</p></td><td colspan="1"><p>Driver&#x27;s side electric mirror demister earth
+(connection with SB26)</p></td></tr><tr><td><p>H44B</p></td><td><p>22</p></td><td colspan="1"><p>n.c.</p></td></tr><tr><td><p>H44B</p></td><td><p>23</p></td><td colspan="1"><p>Driver&#x27;s side high/low mirror actuation</p></td></tr><tr><td><p>H44B</p></td><td><p>24</p></td><td colspan="1"><p>+30 from F-39 (electronic, puddle lights,
+boot release relay driver, door release)</p></td></tr><tr><td><p>H44B</p></td><td><p>25</p></td><td colspan="1"><p>Power supply for services on passenger door
+from</p></td></tr><tr><td><p>F-48</p></td><td></td><td colspan="1"></td></tr></table></div><h3>Electric front windows</h3><h4>Front windows with manual and automatic up, down
+controls and anticrush function</h4><p>The system consists of driver
+and passenger side window controls on the doors; anticrush sheaths
+on the right  front window and left front window plus two R and
+L window motors.</p><p>The control unit (NPG) controls operation
+of the driver and passenger side window motors.</p><p>The driver and passenger side window motors
+are controlled manually or automatically in accordance with a specific strategy.</p><p>Movement takes place with the ignition key
+ON and also with the key OFF.</p><h4>(a) key on (k-on)</h4><p>Movement takes place as described
+in the table</p><div class="table"><table><tr><th></th><th><p>Driver&#x27;s Side Front Window</p></th><th colspan="1"><p>Passenger Side Front Window</p></th></tr><tr><td><p>UP control</p></td><td><p>MANUAL movementAUTOMATIC movement</p></td><td colspan="1"><p>MANUAL movement</p></td></tr><tr><td><p>DOWN control</p></td><td><p>MANUAL movementAUTOMATIC movement</p></td><td colspan="1"><p>MANUAL movementAUTOMATIC movement</p></td></tr></table></div><h4>(b) key off (k-off)</h4><p>Movement is only manual and timed
+by the NBC, which controls service relay 2 supplying the NPG and
+NVB nodes. Note that service relay 2 is located on the facia control
+unit (CPL) - T13 -  is active with the ignition key ON and deactivated temporarily
+during start-up.</p><p>If an INT signal is not received from the
+ignition, the (NBC) maintains service relay 2 supplying the windows
+and sun roof active and changes the timing for 3 minutes ± 10%
+but deactivates it immediately when one of the two front doors is
+opened.</p><p>If a window control (front or rear) is pressed
+within three minutes of controlling service relay 2, the NBC resets
+the timer for a further 3 minutes.</p><h4>Control buttons</h4><p>Right window up/down (front and
+rear window control), unstable rocking type</p><p>Left window up/down (front and rear window
+control), unstable rocking type</p><p>Each time the window function control buttons
+are pressed, the buzzer in the NQS goes off as confirmation: changes
+of status from depressed/released (rocker buttons) must be supplied
+via the CAN network. The NQS is responsible for managing duration
+and tone and then implementing indications in the presence of simultaneous
+controls.</p><h4>Manual system</h4><p>Mode is manual when the user
+starts and stops the system by hand by means of the control buttons.
+The motor stops when the buttons are released.</p><h4>Automatic system</h4><p>Mode is automatic when movement is started by pressing the control button for a period in excess of a preset value. In automatic mode, window arrest (electric power to window motor cut off) is brought about by:</p><ul><li>the window reaching the upper or lower end of its travel</li><li>the safety system (anticrush)</li><li>once a new raise or lower control has been pressed.</li></ul><p>This is regulated by controlling motor current,
+which must be self-adaptive, and by managing the anticrush sensor.</p><h4>Disablement</h4><p>Glass movement is disabled by:</p><ul><li>Vbatt = 16 V (re-enabled for Vbatt = 15.5 V)</li><li>Vbatt = 10 V (re-enabled for Vbatt = 10.5 V)</li></ul><p>The battery voltage level is supplied to
+the network by means of a specific message.</p><h4>Activation with remote control</h4><p>1) SUPERCLOSURE (only if the
+anticrush seal is present)</p><p>Door closure takes place when the lock button
+is pressed. When the button is depressed for more than 4 seconds,
+the windows begin to raise, the sunroof closes and the alarm (if
+present) is activated When the button is released, movement is suspended.
+The button must be pressed again for 4 seconds to resume movement.</p><p>2) SUPEROPENING</p><p>When the release button is pressed, the
+doors are opened and the courtesy light comes on simultaneously
+When the button is depressed for more than 4 seconds, the windows
+descent, the sun roof opens and the alarm (if present) is deactivated.
+When the button is released, movement is suspended. The button must
+be pressed again for 4 seconds to resume movement.</p><h4>Driver&#x27;s side window</h4><p>The control unit should not 
+operate when the control buttons are pressed for less than 60 ms.</p><p>Manual movement is activated if the control
+key is pressed for time: Ta = Activation time &gt; 60 ms and &lt;
+300 ms (short control)</p><p>Automatic operation is activated if the
+control button is pressed for longer than: Ta &gt; 300 ms (long
+control)</p><p>The window power supply is enabled with
+the key on and the battery supplying the control unit.</p><p>The control unit must cut off window operation in the following cases:</p><ul><li>at end of travel - either manual (within a time of 400
+ms ± 50 ms) or automatic  (within a time of 300 ms ± 30 ms);</li><li>automatic arrest, after pressing the up or down control
+again.</li></ul><h4>Passenger side window</h4><p>The passenger side window can
+be raised only manually. It can be lowered manually or automatically
+in the same way as described for the driver&#x27;s side.</p><p>If controls issued simultaneously from driver
+and passenger side do not tally, no movement should take place.</p><h4>Anticrush sensors on driver and passenger side window
+seals</h4><p>These take the form of an electrical
+circuit in a sheath applied to the driver and passenger side upper
+seal. The control unit (NPG) interface contains two analogue inputs
+(signal and earth) with A/D (i.e. conversion from analogue to digital
+signal) for the microcontroller.</p><p>Roughly-speaking, these sensors are made
+up of a resistor with a value of 400 to 1800 ohms under normal conditions,
+i.e. when the glass does not compress the seal.</p><p>The NPG downloads information about the
+presence or absence of an obstacle when the window is closed (raised)
+ via the anticrush seals.</p><p>Under these conditions, the resistance signal
+reaching the control unit must be between 0 and 400 ohms during
+manual or automatic operation.</p><p>As a consequence of this event, the control
+unit must immediately suspend window travel and immediately (max.
+ 30 ms) reverse it for 400 ms.</p><p>Special software strategies are naturally
+also preset to handle changes in the electrical properties of the
+sensors due to wear, ageing etc.</p><aside class="note"><img class="icon" src="../../../media/769.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000041.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>With key ON. If the anticrush
+protection cuts in on three consecutive occasions within 1 minute,
+the NPG must allow the relevant window to be raised in steps (max.
+consecutive 200 ms of control) until the upper stop is reached (window
+closed - managed by current control).</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside><p>When the stop is reached, all error conditions are reset under the following conditions:</p><ul><li>upper stop reached;</li><li>upon a K-OFF, K-ON operation</li><li>once the window has been lowered for at least 400 ms.</li></ul><h4>Safety sensor seal</h4><p>The diagram below shows the safety
+sensor seal.</p><figure class="photo"><img class="zoomable" src="../../../media/2000612.jpg" alt="" loading="lazy"></figure><p>A - Area for fitting safety sensor
+	1 - Connector
+	2 - Safety sensor</p><p>To ensure a good level of safety
+whilst moving the window, the doors are fitted with window seals
+which have a safety function.</p><p>If there is an obstacle between the window
+and the seal, this function immediately interrupts the closing movements
+and reverses the operation of the motor to open the window.</p><p>The safety sensor is housed inside the profile
+of the seal along the entire length of section A, illustrated in
+the previous diagram.</p><h4>Diagram showing front electric window</h4><p>Wiring diagram</p><figure class="photo"><img class="zoomable" src="../../../media/2000613.jpg" alt="" loading="lazy"></figure><p>1 - Body computer node (NBC)
+	2 - Driver&#x27;s door node  (NPC)
+	3 - Facia control unit (CPL)
+	4 - Passenger side window control
+	5 - Driver&#x27;s side anticrush seal
+	6 - Passenger side anticrush seal
+	7 - L front window motor
+	8 - R front window motor</p><h4>Passenger side switch</h4><p>Pin out.</p><figure class="photo"><img class="zoomable" src="../../../media/2000614.jpg" alt="" loading="lazy"></figure><p>1 - Earth
+	2 - Window up/down control negative signal
+	3 - Symbol lighting</p><h4>Anomalous window operation</h4><p>If the system malfunctions, the electronic control unit must activate the following procedure:</p><ul><li>if the engine power output wiring is broken, the control
+unit deactivates the relay within a maximum time of 500 ms during
+operation (only raising) for current values less than 0.8 A.</li><li>upon KEY ON (ignition key inserted), with faults in
+the control buttons (short circuit or keys still depressed), control operation
+is inhibited until the defect disappears (or the key is released),
+for a time &gt; 60 ms;</li><li>if the buttons are pressed for longer than 12 seconds,
+motor operation is inhibited;</li><li>if the down control button is short-circuitd or depressed
+for longer than 30 seconds, the control is inhibited so the window
+can be closed;</li><li>if opposing keys are pressed simultaneously, no control
+takes place. Alternatively the down control takes precedence.</li></ul><p>Because the download circuits are separate (right and left sides of the car), it must be possible to identify:</p><ul><li>seal wiring circuit open;</li><li>seal wiring short circuit;</li><li>short circuit to VB (wiring short circuited to Vbatt);</li><li>short circuit to earth (wiring short-circuited to GND).</li></ul><p>If one of the above situations occurs, the
+NPG emits an error status (FAIL) signal to the CAN network. Conversely,
+when the condition ceases, the NPG deletes the error status (FAIL).</p><p>When the control unit detects that the anticrush protection is not working properly, it takes the following action:</p><ul><li>does not permit automatic window raise;</li><li>allows raising to take place in steps with manual operation
+(max. consecutive 200 ms of control);</li><li>does not allow AUTO up and down operation (CLOSE/OPEN)</li></ul><aside class="note"><img class="icon" src="../../../media/769.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000041.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>Acoustic feedback to indicate
+activation of the front electric window control buton may be activated
+or deactivated. If activated, the NQS manages buzzer duration and
+tone and determines  when to implement the warning if more than
+one control is given simultaneously. This function is active with
+key-off or key-on.</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside><h3>Electric rear windows go ahead and control</h3><h4>Electric rear windows control.</h4><p>The rear windows (on 5 door versions
+only) may be controlled by the NPG once this mode has been selected
+using the &#x27;REAR&#x27; button.</p><p>If the button is pressed, Boot Compartment
+Node (NVB) function is activated and the rear windows can be moved
+by operating the window switches on the Driver&#x27;s Door Node (NPG).</p><p>If no movement is made, the selection returns
+automatically to the front windows 20 minutes after the last window
+movement (NPG).</p><p>Each time the rear windows are operated,
+the rear window selection maintenance time is reset. To make a visual
+check, when the rear windows are selected, a LED is activated which
+stays on throughout the selection on the NVB.</p><p>If the front part of the button is pressed,
+the Driver&#x27;s DoorNode function is operated and the front windows
+can be moved by operating the window switches on the Driver&#x27;s Door
+Node.</p><p>The function may be activated only if rear
+window inhibition status is not present.</p><h4>Inhibition of rear window control from driver&#x27;s side</h4><p>The rear controls can be inhibited
+(protection) via a &#x27;LOCK&#x27; rear movement button. The NPG downloads
+this switch and indicates the inhibition by means of an LED in the
+back of the switch and makes the status available to the network.
+The NVB does not allow the rear windows to be moved and turns off
+the control key lighting.</p><p>For more details <a href="3022543.html">7010M rear electric windows</a></p><h3>Managing front puddle lights</h3><p>When the front doors are opened,
+the driver and passenger microswitches send a negative signal (earth)
+to the body computer node (NBC). This wakes up the CAN network and
+communicates door status to the driver&#x27;s door node (NPG). The node controls
+activation of bulbs in the doors. The function is active with key-off
+ or key on.</p><p>The connector is fitted with two independent
+outlets that are shared inside. These control the bulbs in the doors
+simultaneously.</p><p>When one of the front doors is opened, the
+bulbs come on for a maximum time of 3 minutes as a single event.
+Once the time has elapsed, the puddle lights may be relit only if
+one of the doors is re-opened.</p><p>Closure of both doors brings about immediate
+bulb deactivation.</p><p>If battery voltage is beneath a 10V threshold,
+the NPG must not control activation of the puddle lights.</p><h3>Notification of front door opening</h3><p>This function is acive only with
+the key ON</p><p>Negative signals (earth) from the door and
+boot open microswitches are sent to the Body Computer Node (NBC)
+which sends the CAN network input status to the driver&#x27;s door node
+(NPG); the instrument panel node (NQS) manages activation of the
+warning light.</p><h3>Release/opening from remote control and button on
+facia (f104)</h3><p>The NPG receives a request to
+control boot opening via a remote control message or a negative
+control signal from a button on the central facia control panel.</p><p>Once the message has been received or button
+active status has been downloaded, the driver&#x27;s door node (NPG)
+controls an external relay for 0.5 seconds ± 10% and opens the
+boot (the relay control is positive).</p><p>Each control button depression is followed
+by a confirmation beep n a buzzer in the instrument panel node (NQS).
+The CAN network indicates the rocker button status change from depressed
+to released. The instrument panel node (NQS) is responsible for
+managing buzzer duration and tone and when it should be activated
+in the presence of commands.</p><p>With the key ON, the control button determines
+boot opening when vehice speed is 0 km/h.</p><p>With the key in STOP position, the control
+button signal is downloaded as long as the CAN network is active:
+3 minutes from k-off, when one of the doors is opened for 3 minutes.</p><h3>Door mirrors</h3><p>The doors mirrors are moved electrically
+and heated to demist.</p><p>This second function is managed by the NBC
+because the demisting coil is electrically connected to the heated
+rear window control relay.</p><p>Mirrors can be moved along the L/R axis
+and the up/down axis one at a time by means of a joystick and a
+selection slide with three stable statuses (L) left, central rest
+position and (R) right.</p><aside class="note"><img class="icon" src="../../../media/769.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000041.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>If the selector is moved to the
+central position during manual movement of a mirror, the current
+movement must be suspended; the same applies if it is placed in
+the opposite position (right and left). It is thus necessary to
+select a mirror firstly and then carry out r/l and up/down movements
+with the joystick. The control unit should not operate when the
+buttons are pressed for less than 60 ms.</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside><p>Movement is active with the key ON and maximum
+duration is 8 seconds.</p><p>Mirror movement is disabled by:</p><ul><li>Vbatt = 16 V (re-enabled for Vbatt = 15.5 V)</li><li>Vbatt = 10 V (re-enabled for Vbatt = 10.5 V)</li><li>Lack of INT signal (from CAN network)</li></ul><p>The voltage level (charge status) is present
+on the CAN network.</p><h3>Managing outdoor temperature</h3><p>Temperature information is supplied
+to the network in degrees centigrade (° C). The value to be transmitted
+(every 500 msecis calculated by means of a special algorithm that
+takes into account a value downloaded (every 50 ms) from an NTC sensor
+on the door mirror and appropriately filtered.</p><p>The information in degrees celcius (° C) is precise to 0.5 ° C and is sent via the CAN network for nodes (NCL-NQS-NBC). These users are responsible for applying relevant heating effect strategies:</p><ul><li>NCL climate control strategies;</li><li>NQS permanent value display;</li><li>NBC automatic demist strategies</li></ul><p>When the battery is disconnected and reconnected,
+the control unit is able to ensure the CAN network is supplied with
+the outdoor temperature reading. If the driver&#x27;s door node (NPG)
+detects circuit open or short circuit status for 10 seconds, it communicates
+the anomaly to the users via a special signal.</p><h3>Diagram showing puddle light door mirror deflectors</h3><p>Wiring diagram</p><figure class="photo"><img class="zoomable" src="../../../media/2000615.jpg" alt="" loading="lazy"></figure><p>1 - Body computer node (NBC)
+	2 - Electric mirror positioning knob
+	3 - Electric mirror selector L (left driver&#x27;s side), R (right passenger
+side)
+	4 - Driver&#x27;s side mirror (pin 9 shared, pin 10 lh/rh mirror movement,
+pin 23 up/down mirror movement)
+	5 - Passenger side mirror (pin 6 shared, pin 7  lh/rh mirror movement,
+pin 8 up/down mirror movement)
+	6 - Driver&#x27;s side left door puddle light
+	7 - Passenger side right door puddle light</p><h3>Automatic demisting with low outdoor temperature</h3><p>This function is similar to activation
+of the heated rear window by the user via a manual control, with
+the difference that activation takes place once only with key ON
+and engine running with outdoor temperature = 3° C.  This function
+is inactive with an error on the line or outdoor temperature sensor.</p><p>The following are also present together with the rear window, i.e. connected electrically to its relay:</p><ul><li>demister screen-printed to the rear window;</li><li>right and left door mirror demister;</li><li>screen washer nozzle demister,</li></ul><h3>Permanent outdoor temperature display</h3><p>The instrument panel node (NQS)
+receives outdoor temperature information from the driver&#x27;s door
+node (NPG) in the form of a finite magnitude in degrees centigrade.
+The driver&#x27;s door node in turn receives the temperature signal from
+a sensor located on the door mirror. The instrument panel node (NQS)
+is responsible for displaying the information. If the outdoor temperature
+sensor fails, the (NQS) replaces the temperature reading with flashing
+dashes but the &#x27;° C&#x27; or &#x27;°F&#x27; indication remains. once 5 seconds
+has elapse, the dashes stop flashing and stay on permanently. System
+operation returns to normal when the fault disappears.</p><h3>Climate control strategies</h3><p>In order to achieve a comfortable,
+satisfactory climate within the passenger compartment as quickly
+as possible, the system must be able to determine the outdoor environmental
+conditions and engine temperature at the time the system is activated.</p><p>In other words, if the system is activated
+at a time when the outdoor temperature is very low and the engine
+is cold, it must behave differently from other situations such as:
+outdoor temperature low and engine warm or, conversely, outdoor
+temperature high and engine cold. In order to implement  the ideal
+operating strategy, the system must thus consider the outdoor temperature
+level at the time the vehicle is about to set off (i.e. when the
+key is turned ON) and also with the vehicle in motion, when the
+outdoor temperature read by the sensor could experience changes.</p><p>The system thus acts as follows; when the ignition key is turned from OFF to ON, the system electronic control unit detects blended air temperature:</p><ul><li>If blended air temperature is lower than 40 ° C, the
+system stores the outdoor air temperature value that the sensor
+is measuring.</li><li>If blended air temperature is higher than 40 ° C, the
+system considers the outdoor temperature value stored before the key
+is turned OFF.</li></ul><p>This occurs because, since the engine  is
+warm, the system considers that the vehicle has stopped for a short
+time and environmental conditions are as before the halt.</p><p>The outdoor temperature value is again updated
+while the vehicle is in motion because the outdoor temperature sensor
+could be influenced under these conditions by temperature changes
+in the moving outside air.</p><p>The system then uses a speed signal from the CAN network. The signal is considered in relation to a threshold value of 0-30 km/h:</p><ul><li>If car speed does not exceed 30 km/h, the outdoor air
+temperature value is updated only if it is lower than the value stored
+previously when the key was turned ON.</li><li>If car speed exceds 30 km/h for at least 1 minute, the
+outdoor temperature value replaces the previously stored value, whether
+it is lower or higher.</li></ul><h3>Supplementary functions of driver&#x27;s door node (npg)
+with options fitted</h3><p>The driver&#x27;s door node (NPG) enables the following functions only with options packages fitted:</p><ul><li>front window closure from recirculation control;</li><li>front window closure from pollution sensor;</li><li>front window closure from remote control.</li></ul><h4>Window closure from recirculation control</h4><p>The function is active with the ignition key ON, provided the electric window system is fitted with efficient anticrush seals. Briefly, when the driver&#x27;s door node (NPG) receives recirculation status information from the climate control system (NCL) node via the CAN network, it controls activation of the electric window actuators. The control is implemented in sequence at 50 ms intervals in the following order:</p><ul><li>passenger window;</li><li>driver&#x27;s window</li></ul><h4>Closing wndows from pollution sensor</h4><p>The function is active with the
+ignition key ON. The climate control system software is designed
+to activate recirculation mode if the air to be taken in to the
+vehicle passenger compartment is polluted. The climate control system
+node (NCL) sends a signal via the CAN network to indicate that recirculation
+is activated to the driver&#x27;s door node (NPG) , which activates the front
+window central locking.</p><h4>Closing windows from remote control unit</h4><p>Because the body computer node
+(NBC) is responsible for managing central closure (AUTO CLOSE) and
+opening (AUTO OPEN) of the doors, it can also manage opening/closure
+of the front windows (as well as the electric sunroof and courtesy lights)
+where this function is available.</p><p>The remote control unit is equipped with
+three buttons marked lock, unlock, boot and takes the form of a
+sending unit built into the key grip. It  is fitted with a radio
+stage (433.92 Mhz) with a range of 20 m.</p><p>When a button is pressed, a variable code
+controlled by a mathematical algorithm (rolling code) is sent to
+a receiver built into the body computer (NBC). This node comes with
+a wire aerial that emerges and runs into the facia wiring (the aerial plugs
+into the facia wiring harness by means of a connector and can therefore
+be changed).</p><p>The function is active with the ignition
+key off, provided the window system is equipped with an efficient
+anticrush seal.</p><p>DOOR CLOSURE (AUTO CLOSE) - LONG BLINK</p><p>When the lock button is pressed (single,
+short press) all the doors are locked and the alarm (if present)
+is activated.</p><p>When the button is depressed for longer
+than 4 seconds (long press), the wndows raise and  the sun roof
+closes. The alarm, if present, is activated.</p><p>A long pressing action is also referred
+to as &#x27;super closure&#x27;.</p><p>When the button is released, movement is
+suspended. Re-depress for 4 seconds to resume movement.</p><p>DOOR OPENING (AUTO OPEN) - DOUBLE SHORT
+BLINK</p><p>When the release button is pressed (single
+short press), all doors are released and the alarm (if present)
+is deactivated; the courtesy lights also come on for 15 seconds
+or until key on.</p><p>When the button is depressed for longer
+than 4 seconds (long press), the front windows go down, the sun-roof
+opens and the alarm, if present, is deactivated. A long press is
+also referred to as &#x27;super opening&#x27; When the button is released,
+movement is suspended. Re-depress for 4 seconds to resume movement.</p><p>DIAGRAM SHOWING BOOT OPENING CONTROL VIA
+REMOTE CONTROL AND FACIA BUTTON</p><figure class="photo"><img class="zoomable" src="../../../media/2000616.jpg" alt="" loading="lazy"></figure><p>A - Instrument panel (NQS) boot open indicator display (warning
+light turned on via CAN from Body Computer)
+	B - Central panel
+	C - Boot opening button with built-in led
+	D - Battery
+	E - Fuse control unit on battery F70
+	F - Fuse control unit on engine bay F2
+	G - Facia control unit (NPL) on Body Computer (NBC)
+	H - OPT fuse control unit beneath facia behind Body Computer
+(NBC)
+	I - Driver&#x27;s door node (NPG)
+	L - Boot opening relay next to OPT control unit beneath facia
+	M - Ignition key (remote control) M1 remote boot opening control
+button M2 led indicating dispatch of code to receiver (Body Computer)
+	N - Boot opening electromagnet</p><p>BOOT RELEASE/OPENING FROM REMOTE
+CONTROL AND BUTTON ON FACIA</p><p>The body computer node receives a release
+request from a dedicated button on the radio remote control unit
+with key off and sends the driver&#x27;s door node (NPG) the information
+required to activate the external opening control relay. Opening
+via a single, short press on the facia button is fully controlled
+by the node (NPG). No optical/acoustic boot opening warnings are
+given if the system is not combined with an alarm function.</p></section>
+<h2>Topics linked from this page (1)</h2><ul><li><a href="3022543.html">7010M rear electric windows</a> <span class="meta">system description · all engines; all production periods</span></li></ul>
+<h2>Topics that link to this page (1)</h2><ul><li><a href="3026124.html">Introduction - BODYSHELL INTERIOR TRIMS AND FITTINGS</a> <span class="meta">system description · all engines; all production periods</span></li></ul>
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-a147/en/">https://sloeber94.github.io/elrnDB-a147/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

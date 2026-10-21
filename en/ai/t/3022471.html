@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2127E electric speed selection system · Alfa 147</title>
+<meta name="description" content="system description. engines: 2.0 TS, 3.2 V6; all production periods. Descriptions &gt; 21 GEARBOX &gt; 2127 ELECTRO-HYDRAULIC SELECTION. GEARBOX EXTERNAL. CONTROLS &gt; 2127E electric speed selection system">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Alfa 147 workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="3022400.html">Descriptions</a> › <a href="3022460.html">21 GEARBOX</a> › <a href="3022468.html">2127 ELECTRO-HYDRAULIC SELECTION. GEARBOX EXTERNAL. CONTROLS</a> › <span>2127E electric speed selection system</span></nav>
+<h1><span class="code">2127E</span> electric speed selection system</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Descriptions &gt; 21 GEARBOX &gt; 2127 ELECTRO-HYDRAULIC SELECTION. GEARBOX EXTERNAL. CONTROLS &gt; 2127E electric speed selection system</dd>
+<dt>Kind</dt><dd>system description</dd>
+<dt>Applies to</dt><dd>engines: 2.0 TS, 3.2 V6; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-a147/en/#/3022471">https://sloeber94.github.io/elrnDB-a147/en/#/3022471</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: engines: 2.0 TS; all production periods; only with equipment: Cambio robotizzato</p><h2>CONSTRUCTION FEATURES</h2><h2>Electronic control</h2><p>It is fitted in the passenger compartment
+under the dashboard on the passenger side.</p><p>The CFC 208F control unit communicates with
+the injection control unit through a CAN line and is fitted with
+a tester line.</p><p>PIN OUT</p><figure class="photo"><img class="zoomable" src="../../../media/2000281.jpg" alt="" loading="lazy"></figure><p>1 - Earth
+	2 - Earth
+	3 - EV4 gear + selection actuator solenoid
+	from 4 to 25 - Not connected
+	26 -  Gear selection bit 0
+	27 - Power source (+30)
+	28 -  Ignition-operated power source
+	29 -  On-off solenoid EV3 controlling selection actuator
+	30 -  Not connected
+	31 - Pump relay feed
+	32 -  Solenoid EV1 controlling engagement actuator
+	33 - CAN L line
+	34 - Not connected
+	35 - Not connected
+	36 -  Car speed
+	37 -  Not connected
+	38 -  Gearbox input rpm sensor +
+	39 -  Gear engagement position sensor
+	40 -  Pressure sensor
+	41-  Not connected
+	42 -  Ignition relay control
+	43 -  Solenoid EV0 controlling clutch actuator +
+	44 -  Solenoid EV2 controlling gear engagement actuator +
+	45 - CAN H line
+	46 -  Not connected
+	47 -  Not connected
+	48 -  Engine rpm
+	49 -  Tester line K
+	50 -  Gear input rpm sensor -
+	51 -  Gear selection position sensor
+	52 - Clutch position sensor
+	from 53 to 66 - Not connected
+	67 -  Speed selection bit 1
+	68 -  Speed selection bit 3
+	69 -  Brake pedal switch
+	70 -  Not connected
+	71 -  Not connected
+	72 -  Display data control output
+	73 -  Gear engagement position sensor power source
+	74 -  Speed selection bit 2
+	75 -  Speed selection bit 4
+	76 -  Ignition signal (+50)
+	77 - CITY switch
+	78 - Door button
+	79 -  Clutch position sensor power source (+5V)
+	80 -  Buzzer output control</p><p>The control unit performs the task of:</p><ul><li>receiving signals from the various sensors;</li><li>interfacing with the injection control unit (via the CAN
+C line);</li><li>controlling the hydraulic system;</li><li>interfacing with the instrument panel (via the CAN line);</li><li>managing the buzzer.</li></ul><p>The control unit uses the following signals for the management of these strategies:</p><ul><li>engine rpm (from the injection control unit via the CAN
+C line);</li><li>transmission input rpm sensor;</li><li>clutch position sensor;</li><li>selection position sensor;</li><li>shift position sensor;</li><li>accelerator pedal potentiometer/motorised throttle (from
+injection control unit via CAN C line);</li><li>vehicle speed (from ABS via CAN C line);</li><li>ignition key;</li><li>driver&#x27;s door switch;</li><li>brake pedal switch;</li><li>hydraulic unit fluid pressure.</li></ul><h2>OPERATTION</h2><p>DIAGRAM OF INPUT/OUTPUT INFORMATION FROM
+THE CONTROL UNIT</p><figure class="photo"><img class="zoomable" src="../../../media/2042050.jpg" alt="" loading="lazy"></figure><p>1 - Gear selector lever switches
+	2 -  Engine rpm sensor
+	3 - Vehicle speed (via A.B.S. control unit CAN line)
+	4 - Gear selector levers
+	5 - Brake pedal (dual) switch not earthed
+	6 - Oil pressure sensor
+	7 - Driver&#x27;s side door switch
+	8 - CITY button
+	9 -  Gear input rpm sensor
+	10 -  Clutch position sensor
+	11 - Speed selection position sensor
+	12 -  Shift position sensor
+	13 -  Built-in throttle body DVE (CAN line)
+	14 -  Accelerator pedal potentiometer (CAN line)
+	15 -  Proportional pressure solenoid (no. 2)
+	16 -  On-off solenoid  (2)
+	17 -  Proportional flow solenoids
+	18 -  Electric pump
+	19 - Buzzer
+	20 -  Control panel
+	21- Diagnostic socket</p><h2>Operating strategy</h2><h3>Turning on the system</h3><p>When the ignition key is turned, the system
+tells the driver which speed is engaged via a display on the control
+panel. Once the warning light has gone out, it is ready to accept
+gear changes made using the gear selection lever.</p><h3>Operation with engine off</h3><p>For safety reasons, the gear can be changed
+using the selection lever only with the brake pedal pressed.</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000350.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>When you need to leave the car
+parked on a gradient and engage a gear to hold it in place, it is
+essential to check on the display that the new gear has engaged
+and then wait 1 to 2 seconds before releasing the brake pedal to
+allow the clutch to engage fully.</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000350.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>After changing gear, release the
+gear selection lever immediately. A prolonged manoeuvre (more than
+10 seconds) will cause the transmission warning light to come on.
+The system will switch automatically to CITY mode and a buzzer will
+sound. All this can be reversed by releasing the gear selection
+lever</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside><h3>Engine start-up</h3><p>The engine may be started with a gear engaged
+or with the gearbox in neutral.</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000350.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>Keep the brake pedal depressed
+during start-up.</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside><p>After start-up, the transmission switches
+automatically to neutral (indicated by the letter N on the display)
+and the system selects semiautomatic operation mode (manual).</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000350.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>If the engine fails to start with
+a speed engaged, the driver is informed of a situation of potential
+danger due to the fact that the transmission has automatically switched
+to neutral by a buzzer and a message on the display.</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside><p>The car can be push-started as follows:</p><ul><li>Turn the ignition key to the ON position</li><li>Check the warning light has gone off (after 10 seconds);</li><li>with the car running at a certain speed and the gearbox
+in neutral, shift up a gear (+) using the selection lever.</li></ul><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000350.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>This operation cannot be carried
+out if the battery is completely flat.</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside><h3>Take-off</h3><p>Take-off is possible in 1st, 2nd and reverse
+according to specific clutch closure maps in the control unit.</p><p>For safety reasons, the above gears can
+be selected using the selection lever (steering wheel controls are
+not active until the car is running at 10 km/h) only with the brake
+pedal depressed or with the car at a standstill in the case of reverse.</p><p>When the driver depresses the accelerator
+pedal, the car takes off and the system closes the clutch progressively
+to move the car.</p><p>The driver may adjust the transmitted torque
+by operating the accelerator pedal.</p><p>When engine rpm and clutch rpm are the same,
+the clutch is fully closed.</p><p>During take-off, the driver may request
+a gear change (it is advisable to release the accelerator pedal
+to avoid rapid interruption of the torque transmitted by the clutch).</p><h3>Engine brake on descents</h3><p>With the car on a descent, gear engaged,
+accelerator pedal released and car speed increasing over a set level,
+the clutch is automatically reclosed to provide the necessary engine
+braking effect.</p><p>If the driver operates the accelerator pedal
+during this stage, clutch closure obeys a map stored in the transmission
+control unit.</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>Automatic clutch closure is suspended
+if the car moves in the opposite direction to that of the speed
+engaged.</p></aside><h3>Slowing down</h3><p>When the car is slowing down, e.g. after
+releasing the accelerator pedal, the system automatically re-opens
+the clutch to prevent the engine stalling.</p><p>The clutch re-opens at an engine speed computed on the basis of:</p><ul><li>engine rpm.</li><li>deceleration level (based on engine rpm)</li><li>brake pedal pressed/not pressed.</li></ul><p>When slowing down, if the speed is higher
+than 3rd, the transmission automatically shifts down.</p><p>When the car stops, 1st gear is engaged
+automatically.</p><h3>Manual gear shifts - semiautomatic operation</h3><p>Semiautomatic mode is set:</p><ul><li>automatically whenever the car is started;</li><li>when the driver operates the gear lever or buttons while
+in CITY mode;</li><li>when the driver presses the CITY button again while in
+CITY mode.</li></ul><p>The system will accept an shift up or shift
+down request with the car in motion and clutch fully closed only
+if it is compatible with the current rpm range.</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>If the vehicle is equipped with
+ABS with a VDC function, the gear change is momentarily inhibited
+within the rpm range.</p></aside><p>Normally a gear lever or button command
+(with car speed more than 10 km/h) will trigger only one upward
+or downward shift.</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000350.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>It is advisable to wait for the
+end of a gear shift before requesting another, in order to avoid
+multiple requests in fast succession.</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside><p>Once a gear shift request has been accepted, the shift is carried out according to an automatic sequence that reflects actual driver behaviour.</p><ul><li>engine torque reduction (by reducing advance/closing throttle)
+and simultaneous clutch opening;</li><li>current gear disengaged, new gear selected and engaged.
+The engine (CUT OFF) is controlled in parallel, to increase engine
+rpm to the same level as clutch rpm following engagement of the
+new gear;</li><li>modulated clutch closure and simultaneous gradual return
+to maximum possible torque delivery by the engine. When engine rpm
+and clutch rpm are the same, the clutch is fully closed.</li></ul><p>Gear changes become faster with the accelerator
+pedal pressed through at least 60% of its travel and car speed greater
+than 5000 rpm.</p><p>A current gear shift request may be interrupted
+at any time by a new request by the driver, provided it is compatible
+with the current engine rpm range.</p><p>If the gear shift is not successful, it
+is repeated a second time from neutral. The gear above the one originally
+requested is then engaged.</p><h3>City mode - automatic shifting</h3><p>The speed is selected on the basis of a single control unit map on the basis of:</p><ul><li>accelerator pedal position</li><li>vehicle speed.</li><li>optimum gear (based on the accelerator pedal position)-
+brake pedal position.</li></ul><p>If the accelerator pedal is released, the
+system does not shift up a speed in order to maintain an engine
+braking effect.</p><p>Gears are shifted in exactly the same way
+as during semiautomatic operation. The same transmission and engine
+control parameters are used.</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>With the cruise control function
+activated, the Selespeed control unit does not modify its gear change
+strategies.</p></aside><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>With the VDC function activated,
+the Selespeed control unit momentarily prevents the gear change
+in all engine rpm conditions.</p></aside><h3>Request to shift to neutral</h3><p>This request takes precedence over all other
+gear shift requests.</p><p>With the engine off, hold down the brake
+pedal to engage neutral.</p><p>With the car in motion, neutral cannot be
+engaged when the car is travelling at more than a given speed (40
+km/h)</p><h3>Turning off the engine and deactivating the system</h3><p>When the ignition key is turned off, the
+engine goes off but the Selespeed system stays active until the
+car comes to a complete standstill.</p><p>The hydraulic section is deactivated 2-4
+seconds after the ignition is turned off and the gear display goes
+off immediately after. Only at this point is the Selespeed system
+deactivated.</p><p>The speed selected before the engine is
+turned off remains engaged.</p><p>When the engine is turned off with the gearbox
+in neutral, the buzzer attracts the driver&#x27;s attention so that the
+car can be made safe by engaging 1st gear or reverse.</p><p>In this case, turn the ignition key to MAR
+and engage 1st or reverse with the brake pedal depressed.</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000350.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>Never leave the car in neutral.</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000350.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>Never remove the ignition key
+when the car is in  motion because the Selespeed system would work
+anomalously until the car was stopped and the steering wheel would
+lock automatically the first time it was steered.</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000350.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>It is vital to switch off the
+engine and deactivate the Selespeed system, keeping the brake pedal
+pressed; only release the pedal when the gear display is switched
+off.</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside><h3>When the buzzer sounds</h3><p>For safety reasons, the system activates the buzzer when:</p><ul><li>reverse is engaged;</li><li>the car is parked in neutral (the buzzer goes off when
+the ignition key is turned off).</li><li>the clutch overheats during take off;</li><li>the vehicle moves in the opposite direction to that of
+the gear engaged.</li></ul><p>For safety reasons, with the car at a standstill, engine running and 1st, 2nd or reverse engaged, the system:</p><ul><li>activates the buzzer;</li><li>automatically places the gearbox in neutral when:</li><li>the accelerator pedal and/or brake pedal is not operated
+for at least 50 seconds;</li><li>the brake is depressed for longer than 10 minutes;</li><li>the driver&#x27;s door is opened and the accelerator pedal
+and brake pedal have not been operated for at least 1 second.</li><li>a fault has been detected with the gearbox</li></ul><h3>Towing the vehicle</h3><p>Follow the instructions for towing the vehicle.</p><p>Make sure that the gearbox is in neutral
+and follow the same instructions as for a normal vehicle with a
+manual gearbox given the &#x27;EMERGENCY&#x27; chapter in the Owner&#x27;s Handbook.</p><p>If the gearbox cannot be placed in neutral,
+the vehicle should not be towed.</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000350.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>Do not start the engine whilst
+the vehicle is being towed.</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside><h3>Recovery</h3><h4>Making the system safe</h4><p>The control unit is able to identify potentially
+dangerous situations and make the system safe as a precautionary
+measure.</p><p>The system makes the system safe as follows:</p><ul><li>temporarily stopping a gear shift in progress in the following
+cases: incorrect selection, clutch not sufficiently open and incorrect
+gearbox input rpm range;</li><li>immediate engine stop command (via CAN line) with gear
+engaged, car taking-off/waiting to take off and detection of hydraulic
+clutch fault giving rise to fast clutch re-closure;</li><li>failure in the control unit which involves: maintaining
+the pre-existing traction state so that the vehicle does not stop
+and the opening of the clutch when the vehicle is about to stop.</li></ul><h4>Faulty operation</h4><p>When the system detects faults in its components,
+its operating strategies are reconfigured.</p><p>The system adopts the following operating restrictions according to where the fault lies:</p><ul><li>gear lever faulty, the system switches to automatic CITY
+mode so the car can be driven to the first Authorised Service Outlet;</li><li>clutch solenoid faulty, clutch operation locked with the
+car at a standstill;</li><li>clutch sensor faulty, clutch control locked with the car
+at a standstill;</li><li>shift solenoids faulty, gear shift acceptance locked</li><li>selection solenoids faulty, gear shift acceptance blocked;</li><li>shift and selection sensors faulty, gear change times
+extended and acceptance only of 1st, 2nd and reverse.</li><li>engine, gearbox input and gearbox output rpm sensor faulty,
+and acceptance only of 1st, 2nd and reverse.</li><li>oil pressure sensor faulty, open loop pump control</li><li>gear selection lever switches faulty, switch to automatic
+mode.</li></ul><p>Faults in the Selespeed system are indicated
+by the warning light coming on.</p><p>If the warning light continues to flash,
+a fault has been detected in the transmission. At the same time,
+the buzzer sounds intermittently for 4 seconds.</p><figure class="photo"><img class="zoomable" src="../../../media/2042051.jpg" alt="" loading="lazy"></figure><p>1 - Selespeed gearbox failure warning light display area
+	2 - Error message display area
+	3 - Gear engaged and CITY function activated display area</p><h2>Gearbox input shaft speed sensor</h2><p>Electromagnetic, fitted to the gearbox bell
+housing.</p><figure class="photo"><img class="zoomable" src="../../../media/2042052.jpg" alt="" loading="lazy"></figure><h2>Oil pressure sensor</h2><p>Active type, fitted to the hydraulic unit.</p><figure class="photo"><img class="zoomable" src="../../../media/2042053.jpg" alt="" loading="lazy"></figure><p>DIAGRAM</p><figure class="photo"><img class="zoomable" src="../../../media/2042054.jpg" alt="" loading="lazy"></figure><h2>Actuator position sensor</h2><p>The sensors (potentiometers) that send the
+gearbox electronic control unit the position of the three actuators
+(speed selection, speed engagement and clutch control) are fitted
+to the hydraulic unit.</p><figure class="photo"><img class="zoomable" src="../../../media/2042055.jpg" alt="" loading="lazy"></figure><p>A - Earth
+	B - Supply
+	C - Signal</p><h2>Brake pedal switch</h2><p>Fitted on the pedals, consisting of a dual
+switch.</p><figure class="photo"><img class="zoomable" src="../../../media/2042056.jpg" alt="" loading="lazy"></figure><h2>Door open switch</h2><p>Detects when driver side door is open via
+an on-off switch that earths the circuit and informs the Selespeed
+control unit that this has occurred.</p><h2>Buzzer</h2><p>It is mounted on a bracket near the Selespeed control unit and signals:</p><ul><li>a fault in the system;</li><li>improper use (e.g. clutch overheating);</li><li>car safety (e.g. ignition turned off with car in neutral).</li></ul><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>If the Selespeed buzzer is not
+working, the buzzer in the instrument panel is activated. In this
+case, the operation of the buzzer by the NCR takes precedence over
+any signal from the NQS.</p></aside><figure class="photo"><img class="zoomable" src="../../../media/2042057.jpg" alt="" loading="lazy"></figure></section><section class="block"><p class="applies">Applies to: engines: 3.2 V6; all production periods; only with equipment: Cambio robotizzato</p><h2>COMPONENT DESCRIPTION</h2><h2>ELECTRONIC CONTROL UNIT</h2><p>It is fitted in the passenger compartment
+under the dashboard on the passenger side.</p><p>The control unit communicates with the engine
+control unit through a CAN line and is fitted with a tester line.</p><p>PIN OUT</p><figure class="photo"><img class="zoomable" src="../../../media/2067729.jpg" alt="" loading="lazy"></figure><p>1. Earth
+	2. Earth
+	3. EV4 gear + selection actuator solenoid
+	4. Not connected
+	5. Not connected
+	6. Not connected
+	7. Not connected
+	8. Not connected
+	9. Not connected
+	10. Not connected
+	11. Not connected
+	12. Not connected
+	13. Not connected
+	14. Not connected
+	15. Not connected
+	16. Not connected
+	17. Not connected
+	18. Not connected
+	19. Not connected
+	20. Not connected
+	21. Not connected
+	22. Not connected
+	23. Not connected
+	24. Not connected
+	25. Not connected
+	26. Gear selection bit 0
+	27. Supply (+30)
+	28. Supply controlled by the ignition
+	29. Solenoid EV3 controlling selection actuator
+	30. Not connected
+	31. Pump relay control
+	32. Engagement actuator control solenoid EV1
+	33. CAN line
+	34. Not connected
+	35. Not connected
+	36. Not connected
+	37. Not connected
+	38. gear + input rpm sensor
+	39. Gear engagement position sensor
+	40. Pressure sensor
+	41. Not connected
+	42. Start-up relay control
+	43. Solenoid EV0 controlling clutch actuator +
+	44. Solenoid EV2 controlling gear engagement actuator +
+	45. + CAN line
+	46. Not connected
+	47. Not connected
+	48. Engine rpm
+	49. Diagnostic line K
+	50. Gear - input rpm sensor
+	51. Gear selection postion sensor
+	52. Clutch position sensor
+	53. Not connected
+	54. Not connected
+	55. Not connected
+	56. Not connected
+	57. Not connected
+	58. Not connected
+	59. Not connected
+	60. Not connected
+	61. Not connected
+	62. Not connected
+	63. Not connected
+	64. Not connected
+	65. Not connected
+	66. Not connected
+	67. Speed selection bit 1
+	68. Speed selection bit 3
+	69. Brake pedal switch
+	70. Not connected
+	71. Not connected
+	72. Not connected
+	73. Gear engagement position sensor power source
+	74. Speed selection bit 2
+	75. Speed selection bit 4
+	76. Ignition signal
+	77. Auto switch
+	78. Door button
+	79. Clutch position sensor power source
+	80. Buzzer output control</p><h2>GEARBOX INPUT SHAFT SPEED SENSOR</h2><p>Electromagnetic, fitted to the gearbox bell
+housing.</p><figure class="photo"><img class="zoomable" src="../../../media/2067730.jpg" alt="" loading="lazy"></figure><h2>OIL PRESSURE SENSOR</h2><p>Active type and fitted to the hydraulic
+actuation unit.</p><figure class="photo"><img class="zoomable" src="../../../media/2067731.jpg" alt="" loading="lazy"></figure><p>DIAGRAM</p><figure class="photo"><img class="zoomable" src="../../../media/2067732.jpg" alt="" loading="lazy"></figure><h2>ACTUATOR POSITION SENSORS</h2><p>The sensors (potentiometers) that send the
+gearbox electronic control unit the position of the two actuators
+(speed selection and speed engagement) are fitted to the hydraulic
+actuation unit.</p><figure class="photo"><img class="zoomable" src="../../../media/2067733.jpg" alt="" loading="lazy"></figure><p>A. Earth
+	B. Power supply
+	C. Signal</p><h2>CLUTCH POSITION SENSOR</h2><p>This is fitted on the clutch control actuator
+and informs the electric control unit of the position of the clutch
+control actuator.</p><figure class="photo"><img class="zoomable" src="../../../media/2067734.jpg" alt="" loading="lazy"></figure><h2>BRAKE PEDAL SWITCH</h2><p>This is fitted to the pedal unit and closed
+when the pedal is pressed to cause the STOP lights to come on and
+a signal to be sent to the gearbox electronic control unit</p><figure class="photo"><img class="zoomable" src="../../../media/2067735.jpg" alt="" loading="lazy"></figure><h2>DOOR OPEN SWITCH</h2><p>Detects when driver side door is open via
+an on-off switch that earths the circuit and informs the Selespeed
+control unit that this has occurred.</p><h2>BUZZER</h2><p>This is built into the control panel and notifies the driver of:</p><ul><li>a fault in the system;</li><li>improper use (e.g. clutch overheating);</li><li>car safety (e.g. ignition turned off with car in neutral).</li></ul></section>
+
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-a147/en/">https://sloeber94.github.io/elrnDB-a147/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

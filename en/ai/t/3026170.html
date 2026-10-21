@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E3040 CENTRAL LOCKING - Functional description · Alfa 147</title>
+<meta name="description" content="functional description (how the circuit works). all engines; all production periods; only with equipment: 3 porte. Electrical equipment &gt; Electrical functions &gt; E30 Electrically activated devices &gt; E3040 CENTRAL LOCKING &gt; E3040 CENTRAL LOCKING - Functional description">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Alfa 147 workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="3023137.html">Electrical equipment</a> › <a href="3023138.html">Electrical functions</a> › <a href="3023268.html">E30 Electrically activated devices</a> › <a href="3023301.html">E3040 CENTRAL LOCKING</a> › <span>E3040 CENTRAL LOCKING - Functional description</span></nav>
+<h1><span class="code">E3040</span> CENTRAL LOCKING - Functional description</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; Electrical functions &gt; E30 Electrically activated devices &gt; E3040 CENTRAL LOCKING &gt; E3040 CENTRAL LOCKING - Functional description</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>all engines; all production periods; only with equipment: 3 porte</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-a147/en/#/3026170">https://sloeber94.github.io/elrnDB-a147/en/#/3026170</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods; only with equipment: 3 porte</p><h3>Functional description</h3><p>The door lock command, inside the Body Computer 
+              
+                              
+                              <strong>M1</strong>
+                              
+                                - pin 1 of connector F - has the supply line protected
+              by fuse F38 in the unit under the dashboard 
+                              
+                              <strong>B2</strong>
+                              
+                               ; it also
+              has a dedicated earth connection: pin 20 of connector F.</p><p>The Body Computer M1 receives as input:</p><ul><li>the &#x27;lock&#x27; signals from the handles (or key in the lock)
+              at pins 24 (driver&#x27;s door - <strong>N50</strong> ) and 17 (front passenger&#x27;s
+              door - <strong>N51</strong> ) of connector E.</li><li>the &#x27;release&#x27; signals from the handles (or key in the
+              lock) at pins 34 (driver&#x27;s door - <strong>N50</strong> ) and 35 (front passenger&#x27;s
+              door - <strong>N51</strong> ) of connector E.</li><li>the &#x27;door open&#x27; signals at pins 8 (driver&#x27;s door - <strong>N50</strong> )
+              and 25 (front passenger&#x27;s doodr - <strong>N51</strong> ) of connector E;</li><li>the signal from the lock/release button, located in the
+              controls unit <strong>H12</strong> , at pin 2 of connector D; (the button
+              is lit when the doors are locked by the ignition-dependent line (INT)
+              of fuse F49 of unit <strong>B2</strong> );</li><li>the signals coming from the aerial-receiver <strong>P93</strong> ,
+              which is connected to pins 21 and 31 of connector A.</li></ul><p>In accordance with the control logic described
+              above, the Body Computer 
+                              
+                              <strong>M1</strong>
+                              
+                                controls the lock motors of
+              the driver&#x27;s door 
+                              
+                              <strong>N50</strong>
+                              
+                                and front passenger&#x27;s door 
+                              
+                              <strong>N51</strong>
+                              
+                               ,
+              from pins 10 and 11 of connector F.</p><p>Via the CAN line, the Body Computer 
+                              
+                              <strong>M1</strong>
+                              
+                               
+              is connected to the instrument panel 
+                              
+                              <strong>E50</strong>
+                              
+                               , to which it sends
+              a signal which, when necessary, lights up the &#x27;doors open&#x27; warning
+              light.</p></section>
+
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-a147/en/">https://sloeber94.github.io/elrnDB-a147/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

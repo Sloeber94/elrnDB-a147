@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E7051 ROBOTIZED GEARBOX - Functional description · Alfa 147</title>
+<meta name="description" content="functional description (how the circuit works). engines: 2.0 TS; all production periods; only with equipment: Cambio robotizzato. Electrical equipment &gt; Electrical functions &gt; E70 Vehicle electronic systems &gt; E7051 ROBOTIZED GEARBOX &gt; E7051 ROBOTIZED GEARBOX - Functional description">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Alfa 147 workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="3023137.html">Electrical equipment</a> › <a href="3023138.html">Electrical functions</a> › <a href="3023573.html">E70 Vehicle electronic systems</a> › <a href="3023642.html">E7051 ROBOTIZED GEARBOX</a> › <span>E7051 ROBOTIZED GEARBOX - Functional description</span></nav>
+<h1><span class="code">E7051</span> ROBOTIZED GEARBOX - Functional description</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; Electrical functions &gt; E70 Vehicle electronic systems &gt; E7051 ROBOTIZED GEARBOX &gt; E7051 ROBOTIZED GEARBOX - Functional description</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>engines: 2.0 TS; all production periods; only with equipment: Cambio robotizzato</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-a147/en/#/3026254">https://sloeber94.github.io/elrnDB-a147/en/#/3026254</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: engines: 2.0 TS; all production periods; only with equipment: Cambio robotizzato</p><h3>Functional description</h3><p>The SELESPEED control unit
+                              
+                              <strong>M54</strong>
+                              
+                               monitors
+              and controls the entire gearbox management system.</p><p>The control unit is supplied by the battery,
+              via the line of the maxifuse CPL llocated on the battery (connector 
+                              
+                              <strong>B99
+              B</strong>
+                              
+                               ) and protected by fuse F32 of underfacia control unit 
+                              
+                              <strong>B2</strong>
+                              
+                               ,
+               at pin 27 of connector A of 
+                              
+                              <strong>M54</strong>
+                              
+                               .</p><p>The supply controlled by the ignition (15/54)
+              reaches pin 28 of connector A of 
+                              
+                              <strong>M54</strong><a href="3023440.html">E5010 STARTING AND RECHARING</a>
+                              
+                               .</p><p>Pins 1 and 2 of connector A of 
+                              
+                              <strong>M54</strong>
+                              
+                               
+              are earthed.</p><p>A set of sensors and potentiometers on the
+              gearbox informs the control unit of the engaged gear: the potentiometers
+              are supplied from pin 73 of connector B; pin 66 provides the reference
+              earth: the gear selector potentiometer 
+                              
+                              <strong>K68</strong>
+                              
+                                provides a signal
+              to pin 51 of connector A; the gear engagement potentiometer 
+                              
+                              <strong>K69</strong>
+                              
+                               
+              returns a signal to pin 39 of connector A; the hydraulic unit oil
+              pressure sensor 
+                              
+                              <strong>K96</strong>
+                              
+                                returns a signal to pin 40 of connector
+              A.</p><p>The clutch position potentiometer 
+                              
+                              <strong>K95</strong>
+                              
+                               
+              is supplied from pin 79 of connector B, receives a reference earth
+              from pin 59 and returns a signal to pin 52 of connector A of 
+                              
+                              <strong>M54</strong>
+                              
+                               .</p><p>Pins 38 and 50 of connector A 
+                              
+                              <strong>M54</strong>
+                              
+                               
+              are connected to the car speed sensor (gearbox input) 
+                              
+                              <strong>K77</strong>
+                              
+                               .</p><p>The gear control unit 
+                              
+                              <strong>H37</strong>
+                              
+                                is connected
+              to the control unit 
+                              
+                              <strong>M54</strong>
+                              
+                                to indicate a gear shift request:
+              these signals are sent to pins 67, 74, 68 of connector B of 
+                              
+                              <strong>M54</strong>
+                              
+                               
+              from connector A of 
+                              
+                              <strong>H37</strong>
+                              
+                               ; and to pin 26 of connector A; it
+              receives a reference earth from pin 66 of connector B.</p><p>Connector B of 
+                              
+                              <strong>H37</strong>
+                              
+                                supplies the
+              panel lighting led , which is activated from the line (INT) protected
+              by fuse F51 of underfacia control unit 
+                              
+                              <strong>B2</strong>
+                              
+                               .</p><p>The CITY mode selection button is located
+              in tunnel switch unit 
+                              
+                              <strong>H35</strong>
+                              
+                                and connected to control unit 
+                              
+                              <strong>M54</strong>
+                              
+                               
+              at pin 77 of connector B.</p><p>The steering wheel controls - connected
+              via clock spring contact 
+                              
+                              <strong>D47</strong>
+                              
+                               , send signals to pin 75 of
+              connector  B of 
+                              
+                              <strong>M54</strong>
+                              
+                               ; a reference earth is received from
+              pin 66 of connector B.</p><p>Pin 69 of connector B of 
+                              
+                              <strong>M10</strong>
+                              
+                                receives
+              the signal coming from the brake lights switch 
+                              
+                              <strong>I30</strong>
+                              
+                               , with
+              the supply controlled by the ignition (INT) from fuse F37 of underfacia
+               junction unit 
+                              
+                              <strong>B2</strong>
+                              
+                                ().</p><p>In accordance with the operating logic,
+              the control unit controls the electrohydraulic unit located on the
+              gearbox which effects the gear change: the electric pump 
+                              
+                              <strong>N47</strong>
+                              
+                               ,
+              which keeps the oil in the hydraulic unit under pressure, is controlled
+              from pin 31 of connector A.</p><p>The pump 
+                              
+                              <strong>N47</strong>
+                              
+                                is controlled by a
+              specific relay 
+                              
+                              <strong>J87</strong>
+                              
+                                (supplied by the line of fuse F3 of the
+              engine compartment junction unit 
+                              
+                              <strong>B1</strong>
+                              
+                               ).</p><p>The control unit then controls the opening of the hydraulic unit solenoids:</p><ul><li>the two gear engagement solenoids <strong>L51</strong> and <strong>L52</strong> are controlled from pins 32 and 44 of connector A of <strong>M54</strong> ;</li><li>the two gear selection solenoids <strong>L53</strong> and <strong>L54</strong> are controlled from pins 29 and 3 of connector A of <strong>M54</strong> ;</li><li>the clutch control solenoid <strong>L56</strong> is controlled
+              from pin 43 3 of connector A of <strong>M54</strong> .</li></ul><p>A safety signal comes from pin 42 of connector
+              A of 
+                              
+                              <strong>M54</strong>
+                              
+                                for the starting enablement relay 
+                              
+                              <strong>J5</strong>
+                              
+                                which
+              gives starting enablement, pin 50 of the starter motor 
+                              
+                              <strong>A20</strong>
+                              
+                               ;
+              the signal requesting starting reaches pin 76 of connector B 
+              
+                              
+                              <a href="3023440.html">E5010 STARTING AND RECHARING</a>
+                              
+                               .</p><p>The control unit 
+                              
+                              <strong>M54</strong>
+                              
+                                also manages
+              the door open buzzer: the driver&#x27;s door open signal - catch 
+                              
+                              <strong>N50</strong>
+                              
+                               
+              -  reaches pin 78 of connector B of 
+                              
+                              <strong>M54</strong>
+                              
+                               ;</p><p>the control for the buzzer 
+                              
+                              <strong>E47</strong>
+                              
+                                leaves
+               pin 80 of connector B.</p><p>Self-diagnostic data can be read by connecting
+              the unit to connector G of Body Computer 
+                              
+                              <strong>M1</strong>
+                              
+                                - pin 7:  this
+              receives signals from pin 49 of connector A of  
+                              
+                              <strong>M54</strong>
+                              
+                               . (the
+              line is shared with the engine control unit 
+                              
+                              <strong>M10</strong>
+                              
+                                via the
+              relevant tester line.</p><p>Signals for the gearbox failure warning
+              light in instrument panel 
+                              
+                              <strong>E50</strong>
+                              
+                               , and the instrument gear indication
+              display, are sent via the CAN network - pins 33 and 45 of connector
+              A of 
+                              
+                              <strong>M54</strong>
+                              
+                               .</p><p>The speedometer signal is downloaded via
+              the CAN network.</p><p>Pin 48 of connector A is connected to engine
+              management control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               , from which it receives an engine
+              rpm signal.</p></section>
+<h2>Topics linked from this page (1)</h2><ul><li><a href="3023440.html">E5010 STARTING AND RECHARING</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods; only with equipment: Cambio meccanico</span></li></ul>
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-a147/en/">https://sloeber94.github.io/elrnDB-a147/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

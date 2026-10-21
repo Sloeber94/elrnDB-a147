@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E1050 CAN CONNECTION LINES - Functional description · Alfa 147</title>
+<meta name="description" content="functional description (how the circuit works). engines: 1.9 JTD 8V; all production periods. Electrical equipment &gt; Electrical functions &gt; E10 Power supply and earths &gt; E1050 CAN CONNECTION LINES &gt; E1050 CAN CONNECTION LINES - Functional description">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Alfa 147 workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="3023137.html">Electrical equipment</a> › <a href="3023138.html">Electrical functions</a> › <a href="3023141.html">E10 Power supply and earths</a> › <a href="3023170.html">E1050 CAN CONNECTION LINES</a> › <span>E1050 CAN CONNECTION LINES - Functional description</span></nav>
+<h1><span class="code">E1050</span> CAN CONNECTION LINES - Functional description</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; Electrical functions &gt; E10 Power supply and earths &gt; E1050 CAN CONNECTION LINES &gt; E1050 CAN CONNECTION LINES - Functional description</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>engines: 1.9 JTD 8V; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-a147/en/#/3026138">https://sloeber94.github.io/elrnDB-a147/en/#/3026138</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: engines: 1.9 JTD 8V; all production periods</p><h3>Functional description</h3><p>The Body Computer 
+                              
+                              <strong>M1</strong>
+                              
+                                is supplied
+              directly by the battery from the line protected by the maxifuse
+              CPL (
+                              
+                              <strong>B99</strong>
+                              
+                               , connector B) at pin 18 of connector F of the interface
+              with the underdashboard control unit 
+                              
+                              <strong>B2</strong>
+                              
+                               .</p><p>The Body Computer 
+                              
+                              <strong>M1</strong>
+                              
+                                receives a
+              supply controlled by the ignition (INT) at pin 9 of connector F
+              of the interface with the underdashboard control unit 
+                              
+                              <strong>B2</strong>
+                              
+                               :
+              this signal is designed to &#x27;wake up the network&#x27;.</p><p>Pin 10 of connector C and pin 8 of connector
+              D 
+                              
+                              <strong>M1</strong>
+                              
+                                are earthed.</p><p>The nodes connected to the Body Computer M1 via the C-CAN are:</p><ul><li>engine management control unit <strong>M10</strong> ;</li><li>ABS control unit <strong>M50</strong> (which is not connected directly,
+              but via <strong>M10</strong> )</li><li>steering sensor unit for VDC <strong>K58</strong> .</li></ul><p>The following nodes are connected to the Body Computer M1 via B-CAN:</p><ul><li>climate control system control unit <strong>M70</strong> ;</li><li>instrument panel <strong>E50</strong> ;</li><li>radio or radio-phone-navigator <strong>P20</strong> ;</li><li>driver&#x27;s door control unit <strong>H44</strong> .</li><li>electric rear windows unit <strong>M82</strong> .</li></ul></section>
+
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-a147/en/">https://sloeber94.github.io/elrnDB-a147/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

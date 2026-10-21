@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>7010M rear electric windows · Alfa 147</title>
+<meta name="description" content="system description. all engines; all production periods. Descriptions &gt; 70 FITTINGS &gt; 7010 PASSENGER COMPARTMENT REAR SIDE DOORS &gt; 7010M rear electric windows">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Alfa 147 workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="3022400.html">Descriptions</a> › <a href="3022538.html">70 FITTINGS</a> › <a href="3022542.html">7010 PASSENGER COMPARTMENT REAR SIDE DOORS</a> › <span>7010M rear electric windows</span></nav>
+<h1><span class="code">7010M</span> rear electric windows</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Descriptions &gt; 70 FITTINGS &gt; 7010 PASSENGER COMPARTMENT REAR SIDE DOORS &gt; 7010M rear electric windows</dd>
+<dt>Kind</dt><dd>system description</dd>
+<dt>Applies to</dt><dd>all engines; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-a147/en/#/3022543">https://sloeber94.github.io/elrnDB-a147/en/#/3022543</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>COMPOSITION</h2><p>The luggage compartment node
+(NVB) is located under the rear seat and manages and operation of
+the rear electric windows.</p><h2>OPERATION</h2><p>The Luggage Compartment Node carries out the following functions:</p><ul><li>supports the functions described in the table;</li><li>receives and sends information on the B-CAN line (e.g.
+diagnosis, commands)</li><li>connects with the rear wiring.</li></ul><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>Procedure for communication of
+subfunctions carried out by nodes is: C= via CAN; D = direct communication.</p></aside><p>View of connectors.</p><figure class="photo"><img class="zoomable" src="../../../media/2000620.jpg" alt="" loading="lazy"></figure><p>A - E09LA 18 way
+	B - E09LB 8 way</p><h3>Pin-out</h3><p>CONNECTOR A</p><p>CONNECTOR B</p><h3>Electric rear windows</h3><p>The NVB control unit controls
+the operation of the left and right rear electric window motors
+which can operated both manually and automatically: the closing
+of the rear windows can only be activated manually, whilst they
+can be opened either manually or automatically.</p><h4>Manual system</h4><p>Mode is manual when the user
+starts and stops the system by hand by means of the control buttons.
+The motor stops when the buttons are released.</p><h4>Automatic system</h4><p>Mode is automatic when movement is started by pressing the control button for a period in excess of a preset value. In automatic mode, window arrest (electric power to window motor cut off) is brought about by:</p><ul><li>the window reaching the upper or lower end of its travel</li><li>the safety system (anticrush)</li><li>once a new raise or lower control has been pressed.</li></ul><p>This is regulated by controlling motor current,
+which must be self-adaptive, and by managing the anticrush sensor.</p><p>In the case in question:</p><ul><li>the control unit does not operate when the buttons are
+pressed for less than 60 ms.</li><li>manual movement is activated if the control key is pressed
+for between 60 ms and 300 ms (short control);</li><li>automatic operation is activated if the control button
+is pressed for longer than 300 ms (long control)</li></ul><h4>Key on</h4><p>Movement takes place as described
+in the table</p><h4>Key off</h4><p>Movement is only manual and timed
+by the NBC, which controls service relay 2 supplying the NPG and
+NVB nodes.</p><p>Note that service relay 2 is located on
+the facia control unit (CPL) - T13 -  is active with the ignition
+key ON and deactivated temporarily during start-up.</p><p>If an INT signal is not received from the
+ignition, the NBC maintains service relay 2 supplying the windows
+and sun roof active and changes the timing for 3 minutes ± 10%
+but deactivates it immediately when one of the two front doors is
+opened.</p><p>If a window control (front or rear) is pressed
+within three minutes of controlling service relay 2, the NBC resets
+the timer for a further 3 minutes.</p><h4>Control buttons</h4><p>There are two control buttons
+on the rear doors; but the buttons located on the driver&#x27;s front
+door can also be used, as described below.</p><p>Each time the window function control buttons
+are pressed, the buzzer in the NQS goes off as confirmation: this
+information is supplied via the CAN: it is then the task of the
+NQS to manage the duration and tone and when to activate the signal
+if there are simultaneous commands.</p><h4>Disablement</h4><p>Glass movement is disabled by:</p><ul><li>Vbatt = 16 V (re-enabled for Vbatt = 15.5 V)</li><li>Vbatt = 10 V (re-enabled for Vbatt = 10.5 V)</li></ul><p>The battery voltage level is supplied to
+the network by means of a specific message.</p><h4>Safety sensors in rear door seals</h4><p>These take the form of an electrical
+circuit in a sheath applied to the glass upper seal. The interface
+for the NVB control unit involves two inputs (signal and earth)
+from the sensors which are made up of a resistor with a value of
+400 to 1800 ohms under normal conditions, i.e. when the glass does
+not compress the seal.</p><p>The NVB downloads information about the
+presence or absence of an obstacle when the window is closed (raised):
+in these conditions, the resistive signal is between 0 and 400 ohm.</p><p>As a consequence of this event, the control
+unit immediately interrupts the travel of the glass and reverses
+it.</p><p>Special software strategies are naturally
+also preset to handle changes in the electrical properties of the
+sensors due to wear, ageing etc.</p><h4>Rear electric windows diagram</h4><p>Wiring diagram</p><figure class="photo"><img class="zoomable" src="../../../media/2000621.jpg" alt="" loading="lazy"></figure><p>1 - Body computer node (NBC)
+	2 - Facia control unit (CPL)
+	3 - Driver&#x27;s door node (NPC)
+	4 - Luggage Compartment Node (NVB)
+	5 - Left rear door electric windows control
+	6 - Right rear door electric windows control
+	7 - Left safety sensor seal
+	8 - Right safety sensor seal
+	9 - Left rear electric window motor
+	10 - Right rear electric window motor</p><h3>Electric rear windows go ahead and control from driving
+seat</h3><h4>Electric rear windows control.</h4><p>The rear windows (on 5 door versions
+only) may be controlled by the NPG once this mode has been selected
+using the &#x27;REAR&#x27; button.</p><p>If the button is pressed, the NVB function
+is activated and the rear windows can be moved by operating the
+window switches on the NPG.</p><p>If no movement is made, the selection returns
+automatically to the front windows 20 minutes after the last window
+movement (NPG).</p><p>Each time the rear windows are operated,
+the rear window selection maintenance time is reset. To make a visual
+check, when the rear windows are selected, a LED is activated which
+stays on throughout the selection on the NVB.</p><p>If the front part of the button is pressed,
+the NPG function is operated and the front windows can be moved
+by operating the window switches on the NPG.</p><p>The function may be activated only if rear
+window inhibition status is not present.</p><h4>Inhibition of rear window control from driver&#x27;s side</h4><p>The rear controls can be inhibited
+(protection) via a &#x27;LOCK&#x27; rear movement button. The NPG downloads
+this switch and indicates the inhibition by means of an LED in the
+back of the switch and makes the status available to the network.
+The NVB does not allow the rear windows to be moved and turns off
+the control key lighting.</p><h3>Luggage compartment node (nvb) additional functions</h3><p>The NVB control unit enables the following functions only with options packages fitted:</p><ul><li>rear window closure from recirculation control;</li><li>rear window closure from pollution sensor;</li><li>rear window closure from remote control.</li></ul><h4>Window closure from recirculation control</h4><p>The function is active with the
+ignition key ON, provided the electric window system is fitted with
+efficient anticrush seals. To sum up, when the NVB receives &#x27;recirculation
+status&#x27; information from the climate control node NCL via the CAN,
+it controls the activation of the electric window actuators.</p><h4>Closing wndows from pollution sensor</h4><p>The function is active with the
+ignition key ON. The climate control system software is designed
+to activate recirculation mode if the air to be taken in to the
+vehicle passenger compartment is polluted. The climate control system
+node NCL sends a signal via the CAN to indicate that the recirculation
+is activated and the NVB activates the electric window actuators.</p><h4>Closing windows from remote control unit</h4><p>Because the body computer node
+(NBC) is responsible for managing central closure (AUTO CLOSE) and
+opening (AUTO OPEN) of the doors, it can also manage opening/closure
+of the windows (as well as the electric sunroof and courtesy lights) where
+this function is available.</p><p>The remote control unit is equipped with
+three buttons marked lock, unlock, boot and takes the form of a
+sending unit built into the key grip. It  is fitted with a radio
+stage (433.92 Mhz) with a range of 20 m.</p><p>When a button is pressed, a variable code
+controlled by a mathematical algorithm (rolling code) is sent to
+a receiver built into the body computer (NBC).</p><p>The function is active with the ignition
+key off, provided the window system is equipped with an efficient
+anticrush seal.</p></section>
+
+<h2>Topics that link to this page (1)</h2><ul><li><a href="3022540.html">7005M front electric windows</a> <span class="meta">system description · all engines; all production periods</span></li></ul>
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-a147/en/">https://sloeber94.github.io/elrnDB-a147/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

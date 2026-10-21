@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E4010 INSTRUMENT PANEL - Functional description · Alfa 147</title>
+<meta name="description" content="functional description (how the circuit works). engines: 1.6 TS, 2.0 TS; all production periods. Electrical equipment &gt; Electrical functions &gt; E40 Instrument panel &gt; E4010 INSTRUMENT PANEL &gt; E4010 INSTRUMENT PANEL - Functional description">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Alfa 147 workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="3023137.html">Electrical equipment</a> › <a href="3023138.html">Electrical functions</a> › <a href="3023414.html">E40 Instrument panel</a> › <a href="3023415.html">E4010 INSTRUMENT PANEL</a> › <span>E4010 INSTRUMENT PANEL - Functional description</span></nav>
+<h1><span class="code">E4010</span> INSTRUMENT PANEL - Functional description</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; Electrical functions &gt; E40 Instrument panel &gt; E4010 INSTRUMENT PANEL &gt; E4010 INSTRUMENT PANEL - Functional description</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>engines: 1.6 TS, 2.0 TS; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-a147/en/#/3026198">https://sloeber94.github.io/elrnDB-a147/en/#/3026198</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: engines: 1.6 TS, 2.0 TS; all production periods</p><h3>Functional description</h3><p>The ignition-operated power supply (INT)
+              of the instrument panel 
+                              
+                              <strong>E50</strong>
+                              
+                                reaches pin 1 of connector A
+              through the line of fuse F37 of the unit under the dashboard 
+                              
+                              <strong>B2</strong>
+                              
+                               ;
+              the direct supply reaches pin 2 of connector A through the line
+              of fuse F53 of the unit under the dashboard 
+                              
+                              <strong>B2</strong>
+                              
+                               ; pin 7 of
+              connector A is earthed (earth controlled by the Body Computer 
+                              
+                              <strong>M1</strong>
+                              
+                               ).</p><p>The instrument panel 
+                              
+                              <strong>E50</strong>
+                              
+                                is connected
+              from pins 3 and 4 of connector A to the Body Computer 
+                              
+                              <strong>M1</strong>
+                              
+                               
+              and via the latter to the whole CAN network: via CAN the signal
+              for the electronic speedometer arrives (coming from the ABS control
+              unit 
+                              
+                              <strong>M50</strong>
+                              
+                               ): this signal is replicated from pin 37 of 
+                              
+                              <strong>M50</strong>
+                              
+                               
+              to pin 17 of connector A of the Body Computer 
+                              
+                              <strong>M1</strong>
+                              
+                               .</p><p>The electronic rev counter receives the
+              rpm signal coming via CAN from the engine management control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               .</p><p>The fuel gauge is controlled in accordance
+              with the signals coming from the fuel gauge sender unit located
+              in the fuel pump assembly 
+                              
+                              <strong>N40</strong>
+                              
+                                - at pins 4 and 15 of the
+              Body Computer 
+                              
+                              <strong>M1</strong>
+                              
+                               , and from here via CAN to the instrument
+              panel 
+                              
+                              <strong>E50</strong>
+                              
+                               .</p><p>The seat belt warning light is controlled
+              by a signal sent to pin 15 of connector A of 
+                              
+                              <strong>E50</strong>
+                              
+                                from switch 
+              
+                              
+                              <strong>I45</strong>
+                              
+                               .</p><p>The inertia switch warning light is controlled
+              in accordance with the signal which reaches pin 12 of connector
+              A of 
+                              
+                              <strong>E50</strong>
+                              
+                                from the relevant switch 
+                              
+                              <strong>I50</strong>
+                              
+                                (N.O. contact:
+              the N.C. contact is the one which interrupts the operation of the
+              petrol pump 
+                              
+                              <a href="3023484.html">E5030 PETROL ENGINE ELECTRONIC MANAGEMENT</a>
+                              
+                               ].</p><p>The brake pad wear warning light is controlled
+              in accordance with the signal which reaches pin 23 of connector
+              A of the Body Computer 
+                              
+                              <strong>M1</strong>
+                              
+                                from the relevant sensor 
+                              
+                              <strong>K20</strong>
+                              
+                               .</p><p>The low brake fluid/handbrake applied warning
+              light comes on through a signal from the handbrake switch 
+                              
+                              <strong>I40</strong>
+                              
+                               ,
+              which reaches pin 24 of connector E of the Body Computer 
+                              
+                              <strong>M1</strong>
+                              
+                               , or
+              from the signal from the low brake fluid level sensor 
+                              
+                              <strong>K25</strong>
+                              
+                               ,
+              which reaches pin 18 of connector A of 
+                              
+                              <strong>M1</strong>
+                              
+                               .</p><p>All these signals are transferred via CAN
+              to the instrument panel 
+                              
+                              <strong>E50</strong>
+                              
+                               .</p></section>
+<h2>Topics linked from this page (1)</h2><ul><li><a href="3023484.html">E5030 PETROL ENGINE ELECTRONIC MANAGEMENT</a> <span class="meta">chapter (index of subtopics) · engines: 1.6 TS; all production periods; only with equipment: 103 CV</span></li></ul>
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-a147/en/">https://sloeber94.github.io/elrnDB-a147/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

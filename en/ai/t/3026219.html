@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT - Functional description · Alfa 147</title>
+<meta name="description" content="functional description (how the circuit works). engines: 1.9 JTD 8V; all production periods. Electrical equipment &gt; Electrical functions &gt; E50 Engine control and management systems &gt; E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT &gt; E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT - Functional description">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Alfa 147 workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="3023137.html">Electrical equipment</a> › <a href="3023138.html">Electrical functions</a> › <a href="3023439.html">E50 Engine control and management systems</a> › <a href="3023500.html">E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT</a> › <span>E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT - Functional description</span></nav>
+<h1><span class="code">E5050</span> DIESEL ENGINES ELECTRONIC MANAGEMENT - Functional description</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; Electrical functions &gt; E50 Engine control and management systems &gt; E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT &gt; E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT - Functional description</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>engines: 1.9 JTD 8V; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-a147/en/#/3026219">https://sloeber94.github.io/elrnDB-a147/en/#/3026219</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: engines: 1.9 JTD 8V; all production periods</p><h3>Functional description</h3><p>The engine control unit 
+                              
+                              <strong>M10</strong>
+                              
+                                monitors
+              and controls the entire electronic injection system.</p><p>The system is supplied directly by the battery
+              via a line protected by the maxifuse CVM located on the battery,
+              connector 
+                              
+                              <strong>B99</strong>
+                              
+                               .</p><p>The supply controlled by the ignition (15/554)
+              reaches pin 58 of 
+                              
+                              <strong>M10</strong>
+                              
+                                from the line protected by fuse F16
+              of the engine compartment unit 
+                              
+                              <strong>B1</strong>
+                              
+                               .</p><p>The main injection relay T9 of B1 controls the entire system; the supply line is protected by fuse F18 of B1; it is energized by a control signal (earth) coming from pin 13 of the control unit M10, and thus sends a supply:</p><ul><li>to pin 4 of the actual control unit, via the line from
+              fuse F17 of <strong>B1</strong> ;</li><li>to pin 5 of the actual control unit, via the line from
+              fuse F22 of <strong>B1</strong> ;</li><li>to the oil level sensor <strong>K31</strong> , to the air flow meter <strong>K41</strong> , to the solenoid valves <strong>L30</strong> , <strong>L36</strong> ; <strong>L62</strong> ,
+              to the control unit <strong>M15</strong> , via the line from fuse F11 of <strong>B1</strong></li></ul><p>The fuel pump relay T10 of 
+                              
+                              <strong>B1</strong>
+                              
+                                is
+              supplied by the line of the fuse F21 of 
+                              
+                              <strong>B1</strong>
+                              
+                               .</p><p>It is energized by a control signal (earth)
+              from pin 24 of control unit 
+                              
+                              <strong>M10</strong>
+                              
+                                and supplies power to fuel
+              pump 
+                              
+                              <strong>N40</strong>
+                              
+                               , which is earthed through the inertia switch 
+                              
+                              <strong>I50</strong>
+                              
+                               ,
+              which cuts off the circuit in the case of a crash and so prevents
+              the dangerous spilling of fuel.</p><p>Pins 1, 2 and 3 of 
+                              
+                              <strong>M10</strong>
+                              
+                                are earthed.</p><p>The diesel pre-heating relay T19 of 
+                              
+                              <strong>B1</strong>
+                              
+                               is
+              supplied by the line for fuse F20 of 
+                              
+                              <strong>B1</strong>
+                              
+                               .</p><p>It is energized by a control signal (earth)
+              coming from pin 23 of the control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               and supplies
+              power to the diesel heating resistance 
+                              
+                              <strong>O20</strong>
+                              
+                               .</p><p>Control unit 
+                              
+                              <strong>M15</strong>
+                              
+                               , responsible for
+              controlling preheating of heater plugs 
+                              
+                              <strong>A40</strong>
+                              
+                               , is supplied directly
+              by the battery via a line protected by fuse F1 of 
+                              
+                              <strong>B1</strong>
+                              
+                               .</p><p>It is supplied, connector C, by the line
+              for fuse F11 of 
+                              
+                              <strong>B1</strong>
+                              
+                                and exchanges command and control signals
+              with pins 22 and 62 of 
+                              
+                              <strong>M10</strong>
+                              
+                                which controls the timing. Connector
+              B is connected to the heater plugs 
+                              
+                              <strong>A40.</strong></p><p>The engine control unit 
+                              
+                              <strong>M10</strong>
+                              
+                                receives
+              signals from the various sensors in order to monitor all engine
+              operating conditions.</p><p>The rpm sensor 
+                              
+                              <strong>K46</strong>
+                              
+                                provides information
+              concerning the engine speed through a frequency signal sent to pin
+              100 of the control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               . It receives an earth signal
+              from pin 99 of the control unit. Both signals are weak and are therefore
+              suitably shielded by pin 101.</p><p>Timing sensor 
+                              
+                              <strong>K47</strong>
+                              
+                                is supplied by
+              pin 102 of 
+                              
+                              <strong>M10</strong>
+                              
+                               . It receives a reference earth from pin 104
+              of the control unit 
+                              
+                              <strong>M10</strong>
+                              
+                                and sends it a signal of frequency
+              corresponding to the timing of pin 103.</p><p>The engine temperature sensor 
+                              
+                              <strong>K36</strong>
+                              
+                               ,
+              receives a reference earth from pin 85 of the control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               
+              and supplies a signal proportional to the temperature of the engine
+              coolant to pin 84.</p><p>The air flow meter 
+                              
+                              <strong>K41</strong>
+                              
+                                receives
+              a general supply from the line for fuse 11 of 
+                              
+                              <strong>B1</strong>
+                              
+                                and a reference
+              voltage from pin 88 of 
+                              
+                              <strong>M10</strong>
+                              
+                               . It is supplied by the control
+              unit from pin 97 of 
+                              
+                              <strong>M10</strong>
+                              
+                                and sends a signal proportional
+              to the air flow rate to pin 89. 
+                              
+                              <strong>K41</strong>
+                              
+                                also contains an air
+              temperature sensor which sends an air temperature signal to pin
+              86 of 
+                              
+                              <strong>M10</strong>
+                              
+                               .</p><p>Accelerator pedal 
+                              
+                              <strong>K55</strong>
+                              
+                               is fitted
+              with two built-in potentiometers (a main one and a safety back-up).
+              The first receives power and earth from pins 78 and 76 respectively
+              of 
+                              
+                              <strong>M10</strong>
+                              
+                                and sends a corresponding signal to pin 77. The second
+              receives power and earth from pins 81 and 79, respectively of 
+                              
+                              <strong>M10</strong>
+                              
+                               and
+              sends the signal to pin 80.</p><p>The fuel temperature sensor 
+                              
+                              <strong>K81</strong>
+                              
+                               
+              measures the temperature of the diesel entering. It receives a reference
+              earth from pin 83 of 
+                              
+                              <strong>M10</strong>
+                              
+                                and sends the fuel temperature
+              signal to pin 82.</p><p>The supercharging sensor 
+                              
+                              <strong>K82</strong>
+                              
+                                measures
+              the turbocharger pressure. It is supplied by pin 93 of 
+                              
+                              <strong>M10</strong>
+                              
+                               
+              and receives a reference earth from pin 95. The signal is sent to
+              in 94 of the control unit.</p><p>The fuel pressure sensor 
+                              
+                              <strong>K83</strong>
+                              
+                                is
+              responsible for providing the injection control unit with a feedback
+              signal for governing injection pressure and duration. It receives
+              the power and reference earth from pin 90 and 92, respectively of 
+                              
+                              <strong>M10</strong>
+                              
+                               ;
+              it then sends the pressure signal to pin 91. The fuel pressure regulator 
+              
+                              
+                              <strong>N77</strong>
+                              
+                                has the task of keeping the value of the fuel pressure
+              in the accumulator constant. The two control signals come from pins
+              108 and 109 of the control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               .</p><p>The EGR solenoid 
+                              
+                              <strong>L30</strong>
+                              
+                                controls exhaust
+              gas recirculation. it is supplied by the line for fuse F11 of 
+                              
+                              <strong>B1</strong>
+                              
+                               
+              and is controlled by a signal for pin 16 of 
+                              
+                              <strong>M10</strong>
+                              
+                               .</p><p>The variable geometry solenoid valve 
+                              
+                              <strong>L36</strong>
+                              
+                               
+              regulates the operation of the turbine according to the engine load:
+              it is supplied by the line for fuse F11 of 
+                              
+                              <strong>B1</strong>
+                              
+                                and is controlled by
+              a signal for pin 17 of 
+                              
+                              <strong>M10</strong>
+                              
+                               .</p><p>The solenoid valve on the throttle casing 
+                              
+                              <strong>L62</strong>
+                              
+                               
+              shutters and closes the throttle, for example when the engine is
+              switched off; it is supplied by the line for fuse F11 of 
+                              
+                              <strong>B1</strong>
+                              
+                               
+              and is controlled by a signal for pin 15 of 
+                              
+                              <strong>M10</strong>
+                              
+                               .</p><p>Pin 59 of 
+                              
+                              <strong>M10</strong>
+                              
+                                receives the signal
+              coming from the brake lights switch 
+                              
+                              <strong>I30</strong>
+                              
+                               , with the supply
+              controlled by the ignition (INT) from fuse F37 of the junction unit 
+                              
+                              <strong>B2</strong>
+                              
+                               .</p><p>Pin 61 of 
+                              
+                              <strong>M10</strong>
+                              
+                                receives an earth
+              signal coming from the clutch  switch 
+                              
+                              <strong>I31</strong>
+                              
+                               .</p><p>The injectors 
+                              
+                              <strong>N70</strong>
+                              
+                                receive the opening
+              go ahead supply from pins 117 (cylinders 1 and 2) and 118 (cylinders
+              3 and 4) of 
+                              
+                              <strong>M10</strong>
+                              
+                               .</p><p>The engine control unit sends commands to
+              the injectors 
+                              
+                              <strong>N70</strong>
+                              
+                                from pins 119, 120, 121 and 114 of connector
+              A for cylinders 1, 2, 3 and 4, respectively.</p><p>The control unit 
+                              
+                              <strong>M10</strong>
+                              
+                                receives the
+              minimum engine oil pressure sensor 
+                              
+                              <strong>K30</strong>
+                              
+                                signal at pin 98.</p><p>The water in diesel filter sensor 
+                              
+                              <strong>K31</strong>
+                              
+                               ;
+              is supplied by the line for fuse F11 of 
+                              
+                              <strong>B1</strong>
+                              
+                                and sends the
+              corresponding signal to pin 105 of 
+                              
+                              <strong>M10</strong>
+                              
+                               .</p><p>The control unit M10 is connected via the CAN network to the Body Computer M1 and the other nodes on the network: through this connection, it sends information concerning:</p><ul><li>system self-test, which can be used by connecting to connector
+              G of <strong>M1</strong> .</li><li>engine water temperature, which is sent to the instrument
+              panel <strong>E50</strong> which manages the relevant gauge and warning light;</li><li>rpm, which is sent to the rev counter of the instrument
+              panel <strong>E50</strong> ;</li><li>engine oil minimum pressure, which is sent to instrument
+              panel <strong>E50</strong> which manages the relevant warning light;</li><li>heater plugs pre-heating, which is sent to the instrument
+              panel <strong>E50</strong> which manages the appropriate warning light;</li><li>water in diesel filter, which is sent to the instrument
+              panel <strong>E50</strong> which manages the display.</li></ul><p>It receives, via CAN, the speedometer signal
+              generated by the ABS control unit 
+                              
+                              <strong>M50</strong></p><p>The self-test system of the control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               
+              also generates a signal - which comes from pin 21 of connector A
+              - which is connected directly to the &#x27;EOBD&#x27; warning light located in
+              the instrument panel 
+                              
+                              <strong>E50</strong>
+                              
+                               .</p><p>The self-test data can be read by connecting
+              to connector G of the Body Computer 
+                              
+                              <strong>M1</strong>
+                              
+                                - pin 7: it receives
+              the signals from pin 48 from the control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               via the
+              specific tester line.</p></section>
+
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-a147/en/">https://sloeber94.github.io/elrnDB-a147/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

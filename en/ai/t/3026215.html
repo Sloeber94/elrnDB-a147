@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E5030 PETROL ENGINE ELECTRONIC MANAGEMENT - Functional description · Alfa 147</title>
+<meta name="description" content="functional description (how the circuit works). engines: 1.6 TS; all production periods; only with equipment: 103 CV. Electrical equipment &gt; Electrical functions &gt; E50 Engine control and management systems &gt; E5030 PETROL ENGINE ELECTRONIC MANAGEMENT &gt; E5030 PETROL ENGINE ELECTRONIC MANAGEMENT - Functional description">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Alfa 147 workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="3023137.html">Electrical equipment</a> › <a href="3023138.html">Electrical functions</a> › <a href="3023439.html">E50 Engine control and management systems</a> › <a href="3023484.html">E5030 PETROL ENGINE ELECTRONIC MANAGEMENT</a> › <span>E5030 PETROL ENGINE ELECTRONIC MANAGEMENT - Functional description</span></nav>
+<h1><span class="code">E5030</span> PETROL ENGINE ELECTRONIC MANAGEMENT - Functional description</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; Electrical functions &gt; E50 Engine control and management systems &gt; E5030 PETROL ENGINE ELECTRONIC MANAGEMENT &gt; E5030 PETROL ENGINE ELECTRONIC MANAGEMENT - Functional description</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>engines: 1.6 TS; all production periods; only with equipment: 103 CV</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-a147/en/#/3026215">https://sloeber94.github.io/elrnDB-a147/en/#/3026215</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: engines: 1.6 TS; all production periods; only with equipment: 103 CV</p><h3>Functional description</h3><p>The engine control unit 
+                              
+                              <strong>M10</strong>
+                              
+                                monitors
+              and controls the entire electronic ignition and injection system.</p><p>The system is supplied directly by the battery
+              via a line protected by the maxifuse CVM located on the battery,
+              connector 
+                              
+                              <strong>B99</strong>
+                              
+                               .</p><p>The supply controlled by the ignition (15/54)
+              reaches pin 47 of connector A of 
+                              
+                              <strong>M10</strong>
+                              
+                                from the line protected
+              by the fuse F16 of the engine compartment unit 
+                              
+                              <strong>B1.</strong></p><p>The control unit 
+                              
+                              <strong>M10</strong>
+                              
+                                is supplied
+              directly by the battery at pin 15 of connector A, via a line protected
+              by fuse F18 of the unit 
+                              
+                              <strong>B1</strong>
+                              
+                               .</p><p>The main injection relay T9 of B1 controls the entire system: this is excited by a control signal (earth) received from pin 31 of connector A of control unit M10 and then sends power:</p><ul><li>to pins 16, 32 and 48 of connector A of the unit, via
+              the line protected by fuse F17 of <strong>B1</strong> ;</li><li>to the air flow meter <strong>K41</strong> , to the fuel vapour
+              recovery solenoid <strong>L10</strong> and the Lambda sensors <strong>K15</strong> and <strong>K17</strong> ; (all these  lines are protected by fuse F11 of <strong>B1</strong> ;</li><li>to the injectors <strong>N70</strong> and the coils <strong>A30</strong> ,
+              via the line protected by fuse F22 of <strong>B1</strong> .</li></ul><p>The fuel pump relay T10 of 
+                              
+                              <strong>B1</strong>
+                              
+                                is
+              supplied from the line of fuse F21 of 
+                              
+                              <strong>B1</strong>
+                              
+                               .</p><p>It is energized by a control signal (earth)
+              from pin 30 of connector A of control unit 
+                              
+                              <strong>M10</strong>
+                              
+                                and supplies
+              power to fuel pump 
+                              
+                              <strong>N40</strong>
+                              
+                               , which is earthed through the inertia
+              switch 
+                              
+                              <strong>I50</strong>
+                              
+                               , which cuts off the circuit in the case of a
+              crash and so prevents the dangerous spilling of fuel.</p><p>The engine control unit 
+                              
+                              <strong>M10</strong>
+                              
+                                receives
+              signals from the various sensors in order to monitor all engine
+              operating conditions.</p><p>Rpm sensor 
+                              
+                              <strong>K46</strong>
+                              
+                                provides information
+              on engine speed via a frequency signal sent to pins 10 and 59 of
+              connector B of control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               . These two signals are very
+              low intensity and are therefore shielded.</p><p>Timing sensor 
+                              
+                              <strong>K47</strong>
+                              
+                                is supplied from
+              pin 51 of connector B of control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               , receives a reference
+              earth from pin 26 of connector B and sends a signal of frequency
+              corresponding to the timing to pin 42 of control unit connector
+              B.</p><p>Engine temperature sender unit 
+                              
+                              <strong>K36</strong>
+                              
+                               
+              riceives a reference earth from pin 26 of connector B of control
+              unit 
+                              
+                              <strong>M10</strong>
+                              
+                                and supplies a signal proportional to the coolant
+              temperature to pin 25 of control unit connector B.</p><p>The two Lambda sensors 
+                              
+                              <strong>K15</strong>
+                              
+                               and 
+                              
+                              <strong>K17</strong>
+                              
+                               
+              provide the control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               information on the correct
+              composition of the air-fuel mixture in three different positions
+              of the exhaust: one upstream and the other downstream of the catalyzer.</p><p>The sensor 
+                              
+                              <strong>K15</strong>
+                              
+                                upstream of the catalyzer
+              sends the signal to pin 23 of connector B of 
+                              
+                              <strong>M10</strong>
+                              
+                               , while
+              pin 55 supplies the reference earth. Probe 
+                              
+                              <strong>K15</strong>
+                              
+                                is heated
+              by a resistor in order to ensure it works efficiently even when
+              cold. The resistor is supplied by the main relay and receives an
+              earth signal from pin 34 of connector B of control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               .</p><p>The sensor 
+                              
+                              <strong>K17</strong>
+                              
+                                downstream of the
+              catalyzer sends the signal to pin 28 of connector B of 
+                              
+                              <strong>M10</strong>
+                              
+                               ,
+              while pin 60 supplies the reference earth. The probe 
+                              
+                              <strong>K17</strong>
+                              
+                               
+              is heated with a resistor, supplied by the main relay, and receives
+              an earth signal from pin 50 of connector B of control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               .</p><p>Knock sensor 
+                              
+                              <strong>K50</strong>
+                              
+                                provides information
+              on knock status via a frequency signal sent to pin 22 of connector
+              B of control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               . It receives a reference earth from
+              pin 54 of connector B. The signals are very low intensity and are
+              therefore shielded.</p><p>Air flow meter 
+                              
+                              <strong>K41</strong>
+                              
+                                (supplied by
+              the relay 
+                              
+                              <strong>J10</strong>
+                              
+                               ) receives a reference voltage from pin 63 of
+              connector A of the control unit, and sends to pin 57 of connector
+              A a signal proportional to the air flow. 
+                              
+                              <strong>K41</strong>
+                              
+                                also contains
+              an air temperature sensor: the sensor reference earth is supplied
+              by pin 25 of connector A of 
+                              
+                              <strong>M10</strong>
+                              
+                               , while an air temperature
+              signal is received by pin 54 of connector A.</p><p>Accelerator pedal 
+                              
+                              <strong>K55</strong>
+                              
+                               is fitted
+              with two built-in potentiometers (a main one and a safety back-up).
+              The first receives power and earth from pins 56 and 24 respectively
+              of connector A of 
+                              
+                              <strong>M10</strong>
+                              
+                                and sends a corresponding signal to
+              pin 8 of the same connector. The second receives power and earth
+              from pins 7 and 25 respectively of connector A of 
+                              
+                              <strong>M10</strong>
+                              
+                                and
+              sends a corresponding signal to pin 40 of connector A.</p><p>Pin 274 of connector A of 
+                              
+                              <strong>M10</strong>
+                              
+                                receives
+              the signal coming from the brake lights switch 
+                              
+                              <strong>I30</strong>
+                              
+                               , with
+              the supply controlled by the ignition (INT) from fuse F37 of the
+              junction unit B2.</p><p>Pin 50 of connector A of 
+                              
+                              <strong>M10</strong>
+                              
+                                receives
+              the signal coming from the clutch switch 
+                              
+                              <strong>I31</strong>
+                              
+                               .</p><p>Control unit 
+                              
+                              <strong>M10</strong>
+                              
+                                controls the opening
+              of individual injectors 
+                              
+                              <strong>N70,</strong>
+                              
+                               via duty cycle signals produced
+              by pins 19 (cyl. 1), 52 (cyl. 2), 35 (cyl. 3) and 3 (cyl. 4) of
+              connector B of 
+                              
+                              <strong>M10</strong>
+                              
+                               .</p><p>The injectors 
+                              
+                              <strong>N70</strong>
+                              
+                                receive a power
+              supply to enable the opening from the main relay 
+                              
+                              <strong>R9</strong>
+                              
+                               .</p><p>Control unit 
+                              
+                              <strong>M10</strong>
+                              
+                                also controls coils 
+              
+                              
+                              <strong>A30</strong>
+                              
+                                via control signals (earth) for the coil primary windings,
+              while the secondary winding sends a pulse to the spark plugs: from
+              pins 16 and 14 of connector B for cylinder pair 1-4 and from pins
+              30 and 31 of connector B of 
+                              
+                              <strong>M10</strong>
+                              
+                                for cylinders 2-3.</p><p>The coil 
+                              
+                              <strong>A30</strong>
+                              
+                                primary windings receive
+              a signal to enable opening from the main relay.</p><p>Throttle body actuator 
+                              
+                              <strong>N75</strong>
+                              
+                                is fitted
+              with two built-in potentiometers connected in parallel: they control
+              throttle opening via a stepper motor.</p><p>The motor receives information from pins
+              17 - 49 and 1 - 33 of connector B of 
+                              
+                              <strong>M10</strong>
+                              
+                               . Pin 58 of connector
+              B sends a power supply to both potentiometers, pin 26 supplies an
+              earth signal to the potentiometers, while pins 24 and 41 of the
+              same connector receive signals from the throttle body actuator 
+                              
+                              <strong>N75</strong>
+                              
+                               .</p><p>Fuel vapour recovery solenoid 
+                              
+                              <strong>L10</strong>
+                              
+                               
+              allows fuel vapours to pass through to the engine intake where they
+              join the mixture entering the combustion chamber. Valve 
+                              
+                              <strong>L10</strong>
+                              
+                               ,
+              supplied by main relay, is opened by the control unit when the engine
+              is under load via a duty-cycle signal from pin 5 of connector B
+              of 
+                              
+                              <strong>M10</strong>
+                              
+                               .</p><p>The control unit 
+                              
+                              <strong>M10</strong>
+                              
+                                receives the
+              signal for the minimum engine oil pressure sensor 
+                              
+                              <strong>K30</strong>
+                              
+                                at
+              pin 60 of connector A.</p><p>The control unit M10 is connected via the CAN network to the Body Computer M1 and the other nodes of the network; via this connection it sends information concerning:</p><ul><li>system self-test, which can be used by connecting to connector
+              G of <strong>M1</strong> .</li><li>engine water temperature, which is sent to the instrument
+              panel <strong>E50</strong> which manages the relevant gauge and warning light;</li><li>rpm, which is sent to the rev counter of the instrument
+              panel <strong>E50</strong> ;</li><li>engine oil minimum pressure, which is sent to instrument
+              panel <strong>E50</strong> which manages the relevant warning light;</li></ul><p>It receives, via CAN, the speedometer signal
+              generated by the ABS control unit 
+                              
+                              <strong>M50</strong></p><p>The self-test system of the control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               
+              also generates a signal - which comes from pin 46 of connector A
+              - which is connected directly to the &#x27;EOBD&#x27; warning light located in
+              the instrument panel 
+                              
+                              <strong>E50</strong>
+                              
+                               .</p><p>The self-test data can be read by connecting
+              to connector G of the Body Computer 
+                              
+                              <strong>M1</strong>
+                              
+                                - pin 7: it receives
+              the signals from pin 53 of connector A from the control unit 
+                              
+                              <strong>M10</strong>
+                              
+                               via the
+              specific tester line.</p></section>
+
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-a147/en/">https://sloeber94.github.io/elrnDB-a147/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

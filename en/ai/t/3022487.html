@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3350A anti - spin regulation devices · Alfa 147</title>
+<meta name="description" content="system description. engines: 1.6 TS, 2.0 TS; all production periods. Descriptions &gt; 33 BRAKING SYSTEM &gt; 3350 DRIVE CONTROL&#x27; &gt; 3350A anti - spin regulation devices">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Alfa 147 workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="3022400.html">Descriptions</a> › <a href="3022475.html">33 BRAKING SYSTEM</a> › <a href="3022486.html">3350 DRIVE CONTROL&#x27;</a> › <span>3350A anti - spin regulation devices</span></nav>
+<h1><span class="code">3350A</span> anti - spin regulation devices</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Descriptions &gt; 33 BRAKING SYSTEM &gt; 3350 DRIVE CONTROL&#x27; &gt; 3350A anti - spin regulation devices</dd>
+<dt>Kind</dt><dd>system description</dd>
+<dt>Applies to</dt><dd>engines: 1.6 TS, 2.0 TS; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-a147/en/#/3022487">https://sloeber94.github.io/elrnDB-a147/en/#/3022487</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: engines: 1.6 TS, 2.0 TS; all production periods</p><h2>SPECIFCATIONS</h2><p>GENERAL VIEW</p><figure class="photo"><img class="zoomable" src="../../../media/2067736.jpg" alt="" loading="lazy"></figure><p>2 - Engine management control unit
+	2 - Engine management control unit
+	3 - Front left sensor
+	4 - Front right sensor
+	5 - ASR off button
+	6 - Rear right sensor
+	7 - Rear left sensor
+	8 - ASR warning light
+	9 - EBD warning light
+	10 - ABS warning light</p><h2>Specifications</h2><h3>Function</h3><p>This system carries out all the normal anti-lock and brake distribution functions of the ABS 5.7 with EBD and also ensures the following:</p><ul><li>Acceleration Slip Regulation (A.S.R.)</li><li>engine braking torque regulation (M.S.R.)</li><li>differential lock via action on the brakes (T.C.)</li></ul><p>The functions are ensured by adjusting drive
+torque and applying a braking force to one or both drive wheels.</p><p>If one or both drive wheels tend to slip
+during acceleration, the control unit orders the engine control
+unit to reduce the torque transmitted by the engine to the wheels
+and almost simultaneously brakes the wheel or wheels without the
+driver having to do anything.</p><p>If the wheels tend to lock during hard deceleration,
+the ABS control unit requests the engine control unit to adjust
+engine braking toruqe to prevent car stability.</p><p>The system can be cut out by activating
+a button located on the console.</p><p>A led comes on on the button and a message
+is displayed on the instrument panel DOT matrix to indicate deactivation
+of the ASR/MSR.</p><p>The button warning light comes on and the
+DOT matrix message is repeated to indicate system cut-out due to
+a fault recorded by the control unit.</p><p>ASR/MSR intervention is indicated by the
+warning light on the dashboard flashing.</p><p>Each time the vehicle is started up the
+ASR/MSR function is activated, even if the ignition has been turned
+off with the function deactivated.</p><h2>Components</h2><h3>Structure</h3><p>The system consists of:</p><ul><li>an electronic control unit built into the hydraulic
+control unit</li><li>a hydraulic control unit which modulates the braking
+pressure acting on the brakes by means of twelve solenoids regardless
+of the driver&#x27;s actions</li><li>four ACTIVE sensors</li><li>special wiring.</li></ul><h2>OPERATION</h2><h2>Operating principle</h2><h3>Introduction</h3><p>The system processes the signals coming
+from the active sensors, the brake light switch and the button for
+switching the A.S.R. function on/off.</p><p>It continually compares the speed of wheels
+on the same side of the car (Front right with Rear right - Front
+left with Rear left) and causes the ASR to cut in when a speed difference
+in excess of 2-6 km/h (cut-in threshold) is detected between wheels
+on the same side. The control unit turns on the MSR function when
+it detects an excessive difference between the front and rear axles
+because the front wheels tend to slow down too much compared to
+the rear wheels.</p><p>The ABS/ASR control unit communicates continuously
+with the engine control unit via the C-CAN line.</p><p>The ASR function is active under all car
+speed conditions. Braking action is cut out after 80 km/h.</p><figure class="photo"><img class="zoomable" src="../../../media/2042061.jpg" alt="" loading="lazy"></figure><p>1 - A.B.S./A.S.R. control unit
+	2 - Engine control unit
+	3 - Wheel rpm sensor (active)
+	4 - Brake pedal switch
+	5 -  A.S.R. on/off button
+	6 - A.S.R. on/off LED
+	7 - Motorised throttle body
+	8 - Ignition system (advance adjustment)
+	11 - A.S.R. warning light on dashboard
+	10 - Brake calipers
+	11 - Body Computer</p><h2>Operating strategy</h2><h3>Drive wheel slippage</h3><h4>Intervention - intervention times in road conditions
+with good grip (asphalt)</h4><p>Torque reduction by the engine control unit
+by altering ignition advance - 6/100 s after the skid threshold
+is exceeded;</p><p>Further torque reduction by reducing throttle
+opening (by the engine control unit with motorized throttle body)
+- after  15/100 s;</p><p>Hydraulic system intervention (braking force
+on drive wheel) - after 2/10 s.</p><h4>Operation under conditions of poor grip</h4><p>The system is able to detect this situation
+by comparing drive wheel acceleration with torque transmitted by
+the engine (engine load via engine control unit).</p><p>The system performs in the same way as when
+both drive wheels are in road conditions with good grip (asphalt)
+and the cut in thresholds are at the lower limit.</p><h3>Only one drive wheel slipping.</h3><h4>Intervention-intervention times</h4><p>Torque reduction by the engine control unit
+by altering ignition advances - 6/100 s after the threshold is exceeded;</p><p>Further torque reduction by reducing throttle
+opening (by the engine control unit with motorized throttle body)
+- after 15/100 s.</p><p>Effect on hydraulic system, braking action
+is exerted on the slipping wheel to give the differential a resistive
+force on the side with poor grip (T.C.)</p><p>This resistive force allows the differential
+to transmit an equal torque with good grip.</p><h4>One wheel slipping on a bend with good grip (asphalt).</h4><p>The system detects the presence of a bend
+from the rear wheel speed (drawn).</p><p>It implements the same intervention procedures
+described for when only one drive wheel is slipping; the cut-in
+thresholds are increased to the upper limit. The torque reduction
+is applied gradually.</p><h4>One wheel slipping on a bend with poor grip (snow
+or ice).</h4><p>It implements the same intervention procedures
+described for when only one drive wheel is slipping; the cut-in
+thresholds are increased to the lower limit.   The torque reduction
+is accentuated (to ensure good car lateral containment).</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>Under A.S.R. operating conditions,
+when the control unit simultaneously receives a signal from the
+brake light switch, the system ceases to act on the brakes. The
+torque reduction part remains active.</p></aside><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>With the brake lights switch activated,
+but with maximum braking pressure (e.g. tip of heel, defective switch,
+etc.), if the system detects a speed difference between the front
+and rear wheels which implies the operation of the A.S.R., only
+torque reduction is implemented. Brake intervention is excluded.</p></aside><h3>Modulating braking torque with engine decelerating</h3><h4>Car instability during deceleration with poor grip</h4><p>The system recognises the condition from
+engine load, front and rear wheel speed and brake pedal sensor.
+In this case, drive torque is increased when the engine control
+unit cuts in to open the motorised throttle. This overcomes the
+natural instability of the car due to the engine braking torque
+with poor grip.</p><h3>Cutting out the asr/mrs system</h3><p>The ABS and EBD functions remain active
+if the system is cut out using a button on the panel, as it advisable
+if the cars are on certain surfaces (deep snow, deep mud, deep sand
+or gravel), or with chains on the drive wheels.</p><h3>Cut-in thresholds</h3><p>Cut-in threshold differences, from 2 to 6 km/h, depend upon environmental factors. Some conditions are described in the operating strategies. Others are:</p><ul><li>high acceleration, thresholds high.</li><li>car speed (see graph), tyre type (normal or winter). with
+winter type and good grip, high level threshold, with winter tyres and
+poor grip threshold low.  The system is able to detect this situation
+by comparing drive wheel acceleration with torque transmitted by
+the engine (engine load via engine control unit).</li></ul><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>The A.S.R. function is activated
+at all vehicle speeds; braking action is, however, excluded above
+80 km/h.</p></aside><figure class="photo"><img class="zoomable" src="../../../media/2042062.jpg" alt="" loading="lazy"></figure><p>K, Slipping threshold</p><h3>Asr/msr system failure</h3><p>If the ABS system is faulty, the ASR system is also disabled. The ASR system is cut out with the following faults:</p><ul><li>Engine C-CAN message errors</li><li>C-CAN bus error</li></ul><p>The control unit activates warning lights
+on the control panel and button when these anomalies occur.</p><p>The ASR warning light strategy is as follows:</p><ul><li>with the A.S.R. on, the warning light in the dashboard
+is off and the LED on the button is off;</li><li>with the A.S.R. operating, the warning light on the dashboard
+is intermittent and the LED on the button is off;</li><li>with the ASR off, the warning light on the control panel
+is on, the warning light on the button is on and a message is displayed
+on the DOT matrix to indicate that the ASR is not activated</li><li>when the ASR is faulty, the panel and button warning lights
+are on and an anomaly message is displayed on the DOT matrix.</li></ul><p>The warning lights are governed by the ABS
+control unit by means of a C-CAN network as with the ABS with EBD.</p><h3>Hydraulic system operation</h3><p>The hydraulic unit on the version with A.S.R.
+has 4 additional solenoid valves.</p><p>The inlet solenoid valve (normally closed),
+when activated, can receive the additional quantity of fluid required
+to increase the pressure and brake the wheel/s.</p><p>The operating solenoid valve (normally open),
+when activated, allows the modulated pressure produced by the actual
+pump, necessary for the operation of the A.S.R., to be maintained
+in the pump-brake caliper circuit.</p><p>When the ASR TC function is not on, the ECU:</p><ul><li>does not supply the (N.C.) inlet solenoid valve (2);</li><li>does not supply the (N.A.) operating solenoid valve (3).</li></ul><p>In this way, the system operates like the
+Bosch 5.7 ABS <a href="3022484.html">3340A abs check/adjustment devices</a>.</p><figure class="photo"><img class="zoomable" src="../../../media/2042063.jpg" alt="" loading="lazy"></figure><p>1 - Pump
+	2 - Inlet solenoid valve
+	3 - Pilot solenoid
+	4 - Brake calipers
+	5 - De-pressurizing solenoid valve
+	6 - Pressuring solenoid valve</p><p>When the ASR/TC function is switched on, the electronic control unit:</p><ul><li>supplies the hydraulic pump (1)</li><li>supplies the (N.C.) inlet solenoid valve (2)</li><li>supplies the (N.A.) operating solenoid valve (3).</li></ul><p>Therefore the pressure generated by pump
+(1) then reaches the brake calipers and is modulated, upon a command
+by the electronic control unit, by the de-pressurzing (5) and pressurizing
+(6) solenoid valves.</p><figure class="photo"><img class="zoomable" src="../../../media/2042064.jpg" alt="" loading="lazy"></figure><p>1 - Pump
+	2 - Inlet solenoid valve
+	3 - Pilot solenoid
+	4 - Brake calipers
+	5 - De-pressurizing solenoid valve
+	6 - Pressuring solenoid valve</p><h2>COMPONENT DESCRIPTION</h2><h2>Electrohydraulic unit</h2><h3>Composition</h3><h4>Structure</h4><p>The hydraulic unit consists of a control
+unit and a hydraulic control unit</p><figure class="photo"><img class="zoomable" src="../../../media/2042065.jpg" alt="" loading="lazy"></figure><p>1 - Electronic control unit
+	2 - Electrical connection
+	3 - Accelerator pump motor
+	4 - Hydraulic unit casing</p><h2>Electronic control</h2><h3>Specifications</h3><h4>Function</h4><p>The electronic control unit is responsible for:</p><ul><li>downloading data from the wheel rpm sensors</li><li>storing control parameters defined during the preparation
+of the vehicle</li><li>storing the control software</li><li>processes downloaded data</li><li>controls the braking process</li><li>detecting failures at the braking system components</li><li>storing fault codes and activating ABS/EBD/ASR warning
+lights</li><li>transmitting and receiving data via the diagnostic connector</li><li>communicating with the engine control unit</li><li>controlling the ASR/MSR process</li><li>sending and receiving data via the C-CAN line</li></ul><figure class="photo"><img class="zoomable" src="../../../media/2042066.jpg" alt="" loading="lazy"></figure><p>1 - Power earth
+	2 - +30 power source
+	3 - N.C.
+	4 - N.C.
+	5 - Signal earth
+	6 - +30 power source
+	7 - N.C.
+	8 - N.C.
+	9 - N.C.
+	10 - N.C.
+	11 - Diagnostic line K
+	12 - Front left sensor  signal
+	13 - Rear left sensor positive
+	14 - Rear left sensor signal
+	15 - Front right sensor positive
+	16 - Front right sensor signal
+	17 - N.C.
+	18 - Passive ASR warning light
+	19 - N.C.
+	20 - N.C.
+	21 - N.C.
+	22 - N.C.
+	23 - +15 power source
+	24 - CAN H line
+	25 - N.C
+	26 - N.C.
+	27 - Passive ASR switch
+	28 - Front left sensor positive
+	29 - N.C.
+	30 - Rear right sensor positive
+	31 - Rear right sensor signal
+	32 - N.O. brake button
+	33 - N.C.
+	34 - N.C.
+	35 - N.C.
+	36 - N.C.
+	37 - Vehicle speed VSO (recovery)
+	38 - N.C.
+	39 - N.C.
+	40 - CAN L Line
+	41 - N.C.
+	42 - N.C.</p><p>CIRCUIT DIAGRAM</p><figure class="photo"><img class="zoomable" src="../../../media/2042067.jpg" alt="" loading="lazy"></figure><p>A - Solenoid relay
+	B - Pump motor
+	C - Pump motor
+	D - Valve unit
+	E - Electronic control unit
+	FL - Front left sensor
+	FR - Front right sensor
+	RL - Rear left sensor
+	RR - Rear right sensor
+	1A-1B - Left front wheel solenoid
+	3A-3B - Left front wheel solenoid
+	4A-4B - Left rear wheel solenoid
+	2A-2B - Right rear wheel solenoid
+	5 - Pilot solenoid
+	6 - Intake solenoid
+	7 - Pilot solenoid 1
+	8 - Intake solenoid 1</p><h2>Hydraulic control unit</h2><h3>Specifications</h3><h4>Function</h4><p>Responsible for modulating the pressure of the fluid at the brake calipers via two solenoid valves with the following stages:</p><ul><li>brake fluid pressure increase</li><li>brake fluid pressure maintenance</li><li>brake fluid pressure discharge.</li></ul><h3>Composition</h3><h4>Structure</h4><p>The electro-hydraulic control unit consists of:</p><ul><li>twelve two-way solenoid valves</li><li>a dual circuit electric recovery pump</li><li>two low pressure accumulators</li><li>two high pressure accumulators</li></ul><p>The letters indicating to which caliper and to which brake pump outlet they should be connected at stamped on the control unit at each outlet:</p><ul><li>RR = to the right rear brake (pipe marked with a light
+blue coloured band)</li><li>LR = to the left rear brake (pipe marked with a green
+coloured band)</li><li>RF = to the right front caliper (pipe marked with a yellow
+coloured band)</li><li>LF = to the left front caliper (pipe marked with a white
+coloured band)</li><li>MC1 = from the main circuit/flange side pump (pipe marked
+with a black or pink coloured band when the pipe polyammide resin
+is black)</li><li>MC2 = from the secondary circuit/front pump (pipe marked
+with a brown coloured band).</li></ul><figure class="photo"><img class="zoomable" src="../../../media/2042068.jpg" alt="" loading="lazy"></figure><p>1 - Brake servo pump
+	2 - Hydraulic control unit
+	3  Rear left wheel
+	4 - Front right wheel
+	5 - Front left wheel
+	6 - Rear right wheel</p><h2>Active sensors</h2><h3>Specifications</h3><p>For active sensors see ABS system 
+<a href="3022483.html">3340 A(B.S. ANTI-LOCK BRAKING SYSTEM .)</a>.</p><h2>ASR de-activation/activation button</h2><h3>Function</h3><p>Deactivates the ASR/MSR system and comes
+with indicator LEDs.</p><p>The button is built into the central panel</p><figure class="photo"><img class="zoomable" src="../../../media/2042069.jpg" alt="" loading="lazy"></figure><p>1 - Led
+	2 - Deactivation button</p></section>
+<h2>Topics linked from this page (2)</h2><ul><li><a href="3022483.html">3340 A(B.S. ANTI-LOCK BRAKING SYSTEM .)</a> <span class="meta">chapter (index of subtopics) · engines: 1.6 TS, 2.0 TS; all production periods</span></li><li><a href="3022484.html">3340A abs check/adjustment devices</a> <span class="meta">system description · engines: 1.6 TS, 2.0 TS; all production periods</span></li></ul>
+<h2>Topics that link to this page (1)</h2><ul><li><a href="3022488.html">3350E vehicle direction control system vdc</a> <span class="meta">system description · engines: 1.6 TS, 2.0 TS; all production periods</span></li></ul>
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-a147/en/">https://sloeber94.github.io/elrnDB-a147/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>
